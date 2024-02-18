@@ -1,0 +1,237 @@
+@import '../../../sass/_variable.scss';
+.navBar{
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid $textColor;
+}
+.wrapper_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar_logo_link{
+        display: block;
+        .navbar_logo_img{
+            width: 150px;
+        }
+    }
+}
+
+.navbar_menu_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navbar_menu_item{
+        margin: 0 1rem;
+        .navbar_menu_link{
+            display: block;
+            text-decoration: none;
+            font-family: iranBlack;
+            color: $textColor;
+            padding: 0.3rem 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.4s ease-in;
+            &:hover{
+                color: $whiteColor;
+                background-color: $blueColor1;
+            }
+        }
+        .navbar_menu_linkActive{
+           color: $whiteColor;
+           background-color: $blueColor1;
+       }
+    }
+}
+
+.navbar_account_search{
+    display: flex;
+    align-items: center;
+}
+.navbar_search{
+    display: block;
+    background-color: $blackColor;
+    border-radius: 0.3rem;
+    .navbar_search_input{
+        outline: none;
+        border: none;
+        background-color: unset;
+        height: 2.5rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: $textColor;
+        padding-right: 0.3rem;
+    }
+    .navbar_search_icon{
+        padding-left: 0.3rem;
+        font-size: 1.1rem;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
+
+.navbar_loginRegister{
+    display: block;
+    margin-right: 1rem;
+    position: relative;
+}
+.navbar_loginRegister_icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+
+.navbar_loginRegister_menu{
+    display: block;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 5px;
+    width: 200px;
+    background-color: $blackColor;
+    z-index: 999;
+}
+.navbar_loginRegister_item:first-child{
+    margin-bottom: 1rem;
+}
+.navbar_loginRegister_itemLink{
+    text-decoration: none;
+    color: $textColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+
+
+// navbar Responsive 
+
+.navbarRes{
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid $textColor;
+}
+.navbarRes_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+.navbarRes_logo_link{
+    display: block;
+    .navbarRes_logo_img{
+        width: 200px;
+    }
+}
+
+.navbarRes_loginRegister_menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbarRes_menu{
+    display: block;
+    .navbarRes_menu_icon{
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
+
+.navbarRes_menu_items{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: $blackColor;
+    left: 0;
+    right: 0;
+    margin-top: 1.4rem;
+    padding: 1rem;
+}
+.navbarRes_menu_item{
+    margin-bottom: 1rem;
+    .navbarRes_menu_link{
+        display: block;
+        text-decoration: none;
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.4rem;
+        color: $textColor;
+        &:hover{
+            background-color: $blueColor1;
+            color: $whiteColor;
+        }
+        &.navbarRes_menu_linkActive{
+            background-color: $blueColor1;
+            color: $whiteColor;
+        }
+    }
+}
+.navbarRes_menu_search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    background-color: $bgColor;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    .navbarRes_menu_searchInput{
+        outline: none;
+        border: none;
+        background-color: unset;
+        width: 100%;
+        height: 100%;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $textColor;
+        padding-right: 0.4rem;
+    }
+    .navbarRes_menu_searchIcon{
+        font-size: 1.3rem;
+        padding-left: 0.3rem;
+    }
+}
+
+.navbarRes_loginRegister{
+    display: block;
+    margin-right: 1rem;
+    position: relative;
+    .navbarRes_loginRegister_icon{
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
+
+.navbarRes_loginRegister_items{
+    display: block;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: $blackColor;
+    border-radius: 0.4rem;
+    .navbarRes_loginRegister_item:first-child{
+        margin-bottom: 1rem;
+    }
+    .navbarRes_loginRegister_link{
+        text-decoration: none;
+        color: $textColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
