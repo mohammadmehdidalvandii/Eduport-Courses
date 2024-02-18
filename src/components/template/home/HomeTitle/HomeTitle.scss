@@ -1,0 +1,75 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.homeTitle{
+    display: block;
+    width: 100%;
+    margin: 4rem auto;
+}
+.homeTitle_content{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+}
+.homeTitle_title{
+    font-family: iranBlack;
+    font-size: 5rem;
+    color: $whiteColor;
+}
+.homeTitle_desc{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 1.6;
+}
+.homeTitle_items{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.homeTitle_item{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    .homeTitle_item_icon{
+        margin-left: 0.5rem;
+        font-size: 1.4rem;
+        color: $whiteColor;
+    }
+    .homeTitle_item_text{
+     font-size: 1rem;
+    }
+}
+
+.homeTitle_link{
+    @include buttonRed;
+    margin-top: 2rem;
+}
+
+.homeTitle_wrapper{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+}
+.homeTitle_BgImg{ 
+    border-radius: 1rem;
+    width: 100%;
+}
+.homeTitle_img_re{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 30%;
+}
+.homeTitle_img_an{
+    display: block;
+    position: absolute;
+    top: 5rem;
+}
+.homeTitle_img_fi{
+    display: block;
+    position: absolute;
+    left: 20%;
+    bottom: 2rem;
+}
