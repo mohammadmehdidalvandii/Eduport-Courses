@@ -1,0 +1,38 @@
+// Import File
+@import url(./reset.scss);
+@import './_variable.scss';
+
+// Add Font 
+@font-face {
+    font-family: iranMedium;
+    src: url(../font/IRANSansX-Medium.woff) ;
+}
+@font-face {
+    font-family: iranBold;
+    src: url(../font/IRANSansX-Bold.woff) ;
+}
+@font-face {
+    font-family: iranBlack;
+    src: url(../font/IRANSansX-Black.woff) ;
+}
+
+// Body Style 
+body{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bgColor;
+    color: $textColor;
+    font-family: iranMedium;
+    font-size: 1rem;
+    font-weight: 600;
+}
+// Containers Custom
+.containers{
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
