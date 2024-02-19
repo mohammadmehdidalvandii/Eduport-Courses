@@ -32,5 +32,79 @@
             "iconColor":"#118664",
             "bgColor":"#213238"
         }
+    ],
+    "courses":[
+        {
+            "id":1 ,
+            "category":"finance",
+            "level":"همه سطح",
+            "image":"/assets/images/courses/c1.jpg",
+            "title":"آموزش Sketch",
+            "time":"2دقیقه1",
+            "video":"5 ویدیو"
+        },
+        {
+            "id":2,
+            "category":"graphic",
+            "level":"مقدماتی",
+            "image":"/assets/images/courses/c2.jpg",
+            "title":"آموزش Photoshop",
+            "time":"9ساعت",
+            "video":"65 ویدیو"
+        },
+        {
+            "id":3 ,
+            "category":"web",
+            "level":"مقدماتی",
+            "image":"/assets/images/courses/c3.jpg",
+            "title":"آموزش Figma",
+            "time":"5دقیقه2",
+            "video":"32 ویدیو"
+        },
+        {
+            "id":4 ,
+            "category":"program",
+            "level":"مقدماتی",
+            "image":"/assets/images/courses/c4.jpg",
+            "title":"آموزش React-Native",
+            "time":"8 ساعت",
+            "video":"43 ویدیو "
+        },
+        {
+            "id":5 ,
+            "category":"web",
+            "level":"همه سطح",
+            "image":"/assets/images/courses/c5.jpg",
+            "title":"آموزش HTML",
+            "time":"2 ساعت",
+            "video":"32 ویدیو"
+        },
+        {
+            "id":6 ,
+            "category":"web",
+            "level":"مقدماتی",
+            "image":"/assets/images/courses/c6.jpg",
+            "title":"آموزش CSS",
+            "time":" 4 ساعت",
+            "video":"49 ویدیو"
+        },
+        {
+            "id":7 ,
+            "category":"marketing",
+            "level":"همه سطح",
+            "image":"/assets/images/courses/c7.jpg",
+            "title":"آموزش Invision",
+            "time":"6 ساعت",
+            "video":"75 ویدیو"
+        },
+        {
+            "id":8 ,
+            "category":"program",
+            "level":"همه سطح",
+            "image":"/assets/images/courses/c8.jpg",
+            "title":"آموزش JavaScript",
+            "time":"65 ساعت",
+            "video":"130 ویدیو"
+        }
     ]
 }

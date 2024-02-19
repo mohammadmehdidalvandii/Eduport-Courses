@@ -1,0 +1,43 @@
+@import '../../../../sass/_variable.scss';
+
+.homePopular{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.homePopular_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: $blueColor1;
+    .homePopular_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem;
+        padding: 0.3rem 0.5rem;
+        height: 2rem;
+        outline: none;
+        border: none;
+        border-radius: 0.4rem;
+        background-color: unset;
+        font-size: 1.1rem;
+        color: $blueColor3;
+        &:hover{
+            background-color: $blueColor2;
+            color: $whiteColor;
+        }
+        &.homePopular_btnActive{
+              background-color: $blueColor2;
+                color: $whiteColor;
+        }
+    }
+}
+
+
+
