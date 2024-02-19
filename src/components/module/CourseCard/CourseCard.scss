@@ -1,0 +1,93 @@
+@import '../../../sass/_variable.scss';
+
+.courseCard{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: $blackColor;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    .courseCard_img{
+        width: 100%;
+    }
+}
+.courseCard_level_addFavorite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    .courseCard_level_text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $greenColor2; 
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+        font-size: 0.8rem;
+        color: $whiteColor;       
+    }
+    .courseCard_addFavorite{
+        font-size: 1.5rem;
+        color: $whiteColor;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $redColor3;
+        }
+        &.courseCard_addFavoriteActive{
+            color: $redColor3;
+        }
+    }
+}
+.courseCard_content{
+    display: block;
+    padding: 0.5rem;
+    .courseCard_title{
+        font-family: iranBold;
+        font-size: 1.2rem;
+        color:$whiteColor;
+    }
+    .courseCard_desc{
+        display: block;
+        margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: $whiteColor;
+    }
+}
+.courseCard_score{
+    display: block;
+    padding: 0.5rem;
+    color: $yellowColor2;
+}
+.courseCard_video_time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-top: 1px solid $textColor;
+    .courseCard_time{
+        display: flex;
+        align-items: center;
+        .courseCard_time_icon{
+            font-size: 1.1rem;
+            color: $redColor3;
+            margin-left: 0.2rem;
+        }
+        .courseCard_time_text{
+            font-size: 0.9rem;
+        }
+    }
+    .courseCard_video{
+        display: flex;
+        align-items: center;
+        .courseCard_video_icon{
+            font-size: 1.1rem;
+            color: $yellowColor2;
+            margin-left: 0.2rem;
+        }
+        .courseCard_video_text{
+            font-size: 0.9rem;
+        }
+    }
+}
