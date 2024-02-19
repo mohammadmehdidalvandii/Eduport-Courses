@@ -11,7 +11,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 function HomeTitle() {
   return (
     <section className="homeTitle">
-        <div className="containers">
+        <div className="container">
             <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="homeTitle_content">

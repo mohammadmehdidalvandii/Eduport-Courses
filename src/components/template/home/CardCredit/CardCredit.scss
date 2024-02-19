@@ -1,0 +1,33 @@
+@import '../../../../sass/_variable.scss';
+
+.cardCredit{
+    display: block;
+    width: 100%;
+    margin: 5rem 0;
+}
+.cardCredit_item{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1.5rem 0;
+ background-color: $yellowColor1;
+ border-radius: 0.5rem;
+ margin-bottom: 1rem;
+ .cardCredit_item_icon{
+     font-size: 3rem;
+     color: $yellowColor2;
+    }
+    .cardCredit_item_content{
+        display: block;
+        margin-right: 1rem;
+        color: $whiteColor;
+        .cardCredit_item_title{
+            font-family: iranBold;
+            font-size: 1.2rem;
+        }
+        .cardCredit_item_text{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
+}

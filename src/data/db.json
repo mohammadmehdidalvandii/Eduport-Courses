@@ -1,0 +1,36 @@
+{
+    "credit":[
+        {
+            "id": 1,
+            "icon":"faTv",
+            "title":"10 دروه",
+            "text":"آموزش آنلاین",
+            "iconColor":"#F7C32E",
+            "bgColor":"#423C2A"
+        },
+        {
+            "id": 2,
+            "icon":"faUserTie",
+            "title":"200 مدرس",
+            "text":"مجرب و باسابقه",
+            "iconColor": "#17A2B8",
+            "bgColor":"#202C39"
+        },
+        {
+            "id": 3,
+            "icon":"faUserGraduate",
+            "title":"60 هنرجو",
+            "text":"دانشجوی آنلاین",
+            "iconColor": "#6F42C1",
+            "bgColor":"#2A2839"
+        },
+        {
+            "id": 4,
+            "icon":"faCheckCircle",
+            "title":" 6 مدرک بین المللی",
+            "text":"دوره های گواهی شده",
+            "iconColor":"#118664",
+            "bgColor":"#213238"
+        }
+    ]
+}
