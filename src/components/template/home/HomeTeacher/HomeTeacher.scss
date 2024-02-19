@@ -1,0 +1,47 @@
+@import '../../../../sass/_variable.scss';
+
+.homeTeacher{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.homeTeacher_Wrapper{
+    display: block;
+    padding: 2rem;
+    width: 100%;
+    background-color: $blueColor2;
+    border-radius: 0.6rem;
+}
+.homeTeacher_content{
+    display: block;
+    width: 100%;
+    .homeTeacher_title{
+        display: block;
+        font-family: iranBold;
+        font-size: 2.2rem;
+    }
+    .homeTeacher_desc{
+        display: block;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+.homeTeacher_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 120px;
+    height: 2.5rem;
+    text-decoration: none;
+    // background-color: $yellowColor2;
+    border: 1px solid $yellowColor2;
+    border-radius: 0.6rem;
+    font-size: 1.1rem;
+    color: $whiteColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        background-color: $yellowColor2;
+        color: $blackColor;
+    }
+}
