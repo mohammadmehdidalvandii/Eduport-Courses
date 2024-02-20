@@ -49,6 +49,9 @@ function HomeFestival() {
                     },
                     568:{
                         slidesPerView: 1
+                    },
+                    320:{
+                        slidesPerView: 1
                     }
                 }
           }
