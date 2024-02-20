@@ -1,0 +1,30 @@
+@import '../../../../sass/_variable.scss';
+.homeComment{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.commentCard{
+    display: block;
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: $blackColor;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.commentCard_img{
+    width: 100px;
+    border-radius: 50%;
+}
+.commentCard_desc{
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+.commentCard_name{
+    font-family: iranBold;
+    font-size: 1.5rem;
+    color: $yellowColor2;
+}

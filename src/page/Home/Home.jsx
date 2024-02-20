@@ -3,6 +3,7 @@ import CardCredit from "../../components/template/home/CardCredit/CardCredit"
 import HomePopular from "../../components/template/home/HomePopular/HomePopular"
 import HomeTeacher from "../../components/template/home/HomeTeacher/HomeTeacher"
 import HomeFestival from "../../components/template/home/HomeFestival/HomeFestival"
+import HomeComment from "../../components/template/home/HomeComment/HomeComment"
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
     <HomePopular/>
     <HomeTeacher/>
     <HomeFestival/>
+    <HomeComment/>
     </>
   )
 }
