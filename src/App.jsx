@@ -5,6 +5,7 @@ import { useState } from "react"
 
 import CoursesContext from "./Context/coursesContext"
 import db from './data/db.json'
+import Footer from "./components/module/Footer/Footer"
 
 function App() {
   const router = useRoutes(routes)
@@ -19,6 +20,7 @@ function App() {
     >
     <Navbar/>
     {router}
+    <Footer/>
     </CoursesContext.Provider>
     </>
   )

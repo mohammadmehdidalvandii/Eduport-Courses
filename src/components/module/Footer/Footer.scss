@@ -1,0 +1,49 @@
+@import '../../../sass/_variable.scss';
+.footer{
+    display: block;
+    width: 100%;
+    background-color: $blackColor;
+    padding: 5rem 0;
+}
+.footer_content{
+    display: block;
+    width: 100%;
+    .footer_logo{
+        width: 150px;
+    }
+    .footer_desc{
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1.6;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.footer_title{
+    font-family: iranBold;
+}
+
+.footer_items{
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.footer_item{
+    margin-bottom: 1rem;
+}
+.footer_item_text{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $whiteColor;
+}
+.footer_item_link{
+    text-decoration: none;
+    color: $whiteColor;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
