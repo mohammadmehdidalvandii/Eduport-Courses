@@ -12,7 +12,7 @@
 }
 .homeTitle_title{
     font-family: iranBlack;
-    font-size: 5rem;
+    font-size: clamp(5rem ,2vh , 1rem);
     color: $whiteColor;
 }
 .homeTitle_desc{
