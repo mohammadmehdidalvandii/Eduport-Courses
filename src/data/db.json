@@ -105,6 +105,51 @@
             "title":"آموزش JavaScript",
             "time":"65 ساعت",
             "video":"130 ویدیو"
+        },
+        {
+            "id":9 ,
+            "category":"program",
+            "level":"مبتدی",
+            "image":"/assets/images/courses/c9.jpg",
+            "title":"آموزش  Laravel",
+            "time":"6 ساعت",
+            "video":"35 ویدیو"
+        },
+        {
+            "id":10 ,
+            "category":"program",
+            "level":"مبتدی",
+            "image":"/assets/images/courses/c10.jpg",
+            "title":"آموزش PHP",
+            "time":"21 ساعت",
+            "video":"19 ویدیو"
+        },
+        {
+            "id":11 ,
+            "category":"program",
+            "level":"مقدماتی",
+            "image":"/assets/images/courses/c11.jpg",
+            "title":"آموزش Bootstrap",
+            "time":"12 ساعت",
+            "video":"43 ویدیو"
+        },
+        {
+            "id":12 ,
+            "category":"program",
+            "level":"همه سطح",
+            "image":"/assets/images/courses/c12.jpg",
+            "title":"آموزش Angular",
+            "time":"43 ساعت",
+            "video":"87 ویدیو"
+        },
+        {
+            "id":13 ,
+            "category":"program",
+            "level":"حرفه ای",
+            "image":"/assets/images/courses/c13.jpg",
+            "title":"آموزش Python",
+            "time":"120 ساعت",
+            "video":"145 ویدیو"
         }
     ]
 }

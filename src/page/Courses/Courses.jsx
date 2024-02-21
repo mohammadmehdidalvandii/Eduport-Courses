@@ -1,4 +1,5 @@
 import HeaderPage from "../../components/module/HeaderPage/HeaderPage"
+import CourseItem from "../../components/template/courses/CourseItem/CourseItem"
 
 
 function Courses() {
@@ -8,6 +9,7 @@ function Courses() {
         title='دوره ها'
         text="دوره ها"
       />
+      <CourseItem/>
     </>
   )
 }
