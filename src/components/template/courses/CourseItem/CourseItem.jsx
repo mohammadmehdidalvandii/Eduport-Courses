@@ -13,7 +13,45 @@ function CourseItem() {
         let newCourses = coursesAll.filter(course => course.title.toLowerCase().includes(search.toLowerCase()))
         setCoursesAll(newCourses)
     },[coursesData.courses ,search ])
-  
+    // add logic bracelet menu
+    const [filter , setFilter] =useState("")
+    useEffect(()=>{
+        switch (filter){
+            case 'program':{
+                const newCourses = [...coursesAll].filter(courses => courses.category.includes('program'))
+                setCoursesAll(newCourses)
+                
+                break;
+            }
+            case 'web':{
+                const newCourses = [...coursesAll].filter(courses => courses.category.includes('web'))
+                setCoursesAll(newCourses)
+
+                break;
+            }
+            case 'graphic':{
+                const newCourses = [...coursesAll].filter(courses => courses.category.includes('graphic'))
+                setCoursesAll(newCourses)
+              
+                break;
+            }
+            case 'marketing':{
+                const newCourses = [...coursesAll].filter(courses => courses.category.includes('marketing'))
+                setCoursesAll(newCourses)
+            
+                break;
+            }
+            case 'finance':{
+                const newCourses = [...coursesAll].filter(courses => courses.category.includes('finance'))
+                setCoursesAll(newCourses)
+               
+                break;
+            }
+            default:{
+                setCoursesAll([...coursesData.courses])
+            }
+        }
+    },[filter])
   return (
     <section className="CourseItem">
         <div className="container">
@@ -24,13 +62,13 @@ function CourseItem() {
                             <input type="text" value={search} className='CourseItem_search_input' placeholder='نام دوره ' onChange={e=>setSearch(e.target.value)}/>
                             {/* <button className="CourseItem_search_btn">جستجو</button>     */}
                         </div>
-                        <select className="CourseItem_menu">
-                            <option value="" className="CourseItem_menu_item">دسته بندی</option>
-                            <option value="" className="CourseItem_menu_item">برنامه نویسی</option>
-                            <option value="" className="CourseItem_menu_item">طراحی وب</option>
-                            <option value="" className="CourseItem_menu_item">گرافیک</option>
-                            <option value="" className="CourseItem_menu_item">دیجیتال مارکتینگ</option>
-                            <option value="" className="CourseItem_menu_item">بازارمالی</option>
+                    <select className="CourseItem_menu" defaultValue={filter} onChange={e=>setFilter(e.target.value)}>
+                            <option value="bracelet" className="CourseItem_menu_item">دسته بندی</option>
+                            <option value="program" className="CourseItem_menu_item">برنامه نویسی</option>
+                            <option value="web" className="CourseItem_menu_item">طراحی وب</option>
+                            <option value="graphic" className="CourseItem_menu_item">گرافیک</option>
+                            <option value="marketing" className="CourseItem_menu_item">دیجیتال مارکتینگ</option>
+                            <option value="finance" className="CourseItem_menu_item">بازارمالی</option>
                         </select>
                      </div>
                 </div>
