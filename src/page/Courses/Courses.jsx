@@ -1,8 +1,14 @@
+import HeaderPage from "../../components/module/HeaderPage/HeaderPage"
 
 
 function Courses() {
   return (
-    <div>Courses</div>
+    <>
+      <HeaderPage
+        title='دوره ها'
+        text="دوره ها"
+      />
+    </>
   )
 }
 
