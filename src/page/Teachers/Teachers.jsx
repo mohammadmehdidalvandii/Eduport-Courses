@@ -1,8 +1,15 @@
-
+import HeaderPage from '../../components/module/HeaderPage/HeaderPage'
+import Teacher from '../../components/template/teacher/Teacher/Teacher'
 
 function Teachers() {
   return (
-    <div>Teachers</div>
+    <>
+    <HeaderPage
+      title='لیست مدرس ها '
+      text='لیست مدرس ها '
+    />
+    <Teacher/>
+    </>
   )
 }
 
