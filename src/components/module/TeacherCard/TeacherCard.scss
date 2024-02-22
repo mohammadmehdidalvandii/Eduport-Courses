@@ -1,0 +1,59 @@
+@import '../../../sass/_variable.scss';
+
+
+.teacherCard{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.6rem;
+    color: $textColor;
+    background-color: $blackColor;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    .teacherCard_img{
+        width:200px ;
+        border-radius: 0.5rem;
+    }
+    .teacherCard_content{
+        display: block;
+        margin-right: 1rem;
+    }
+}
+.teacherCard_name_job{
+    display: block;
+    .teacherCard_name{
+        font-family: iranBold;
+        font-size: 1.3rem;
+        color: $whiteColor;
+    }
+    .teacherCard_job{
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+    }
+}
+.teacherCard_score{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    .teacherCard_score_icon{
+        font-size: 1rem;
+        color: $yellowColor2;
+    }
+    .teacherCard_score_number{
+        font-size: 1rem;
+        color: $whiteColor;
+        margin-right: 0.5rem;
+    }
+}
+.teacherCard_desc{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+.teacherCard_learn{
+    display: block;
+    margin-top: 1rem;
+    color: $yellowColor2;
+}
