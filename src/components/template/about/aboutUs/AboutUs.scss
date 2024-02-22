@@ -1,0 +1,64 @@
+@import '../../../../sass/_variable.scss';
+
+.aboutUs{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.aboutUs_titleDesc{
+    display: block;
+    width: 100%;
+    color: $whiteColor;
+    padding: 2rem;
+    background-color: $blackColor;
+    border-radius: 0.6rem;
+    .aboutUs_title{
+        font-family: iranBlack;
+        font-size: 2.5rem;
+    }
+    .aboutUs_desc{
+        font-size: 0.9rem;
+        color: $textColor;
+        margin-top: 0.6rem;
+        max-width: 800px;
+        line-height: 1.6;
+    }
+}
+.aboutUs_img{
+    width: 100%;
+    border-radius: 0.6rem;
+}
+.aboutUs_content{
+    display: block;
+    width: 100%;
+    .aboutUs_content_title{
+        display: block;
+        font-family: iranBold;
+        font-size: 1.8rem;
+        color: $whiteColor;
+    }
+    .aboutUs_content_desc{
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+.aboutUs_content_items{
+    display: block;
+    margin-top: 2rem;
+    .aboutUs_content_item{
+        display: flex;
+        margin-bottom: 1rem;
+        .aboutUs_content_item_icon{
+            font-size: 1.5rem;
+            color: $greenColor3;
+            margin-left: 0.6rem;
+        }
+        .aboutUs_content_item_text{
+            font-size: 1rem;
+            color: $whiteColor;
+        }
+    }
+}

@@ -1,8 +1,15 @@
-
+import HeaderPage from '../../components/module/HeaderPage/HeaderPage'
+import AboutUs from '../../components/template/about/aboutUs/AboutUs'
 
 function About() {
   return (
-    <div>About</div>
+ <>
+    <HeaderPage
+      title='درباره ما'
+      text='درباره ما'
+    />
+    <AboutUs/>
+ </>
   )
 }
 

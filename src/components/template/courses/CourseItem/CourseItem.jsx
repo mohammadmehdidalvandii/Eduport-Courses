@@ -14,7 +14,7 @@ function CourseItem() {
         setCoursesAll(newCourses)
     },[coursesData.courses ,search ])
     // add logic bracelet menu
-    const [filter , setFilter] =useState("")
+    const [filter , setFilter] =useState("bracelet")
     useEffect(()=>{
         switch (filter){
             case 'program':{
