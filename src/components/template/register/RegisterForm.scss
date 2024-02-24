@@ -1,0 +1,32 @@
+@import '../../../sass/_variable.scss';
+.registerForm{
+    display: block;
+    width: 100%;
+    margin: 5rem 0;
+}
+.registerForm_img{
+    width: 100%;
+    background-color: $blackColor;
+    max-height: 100vh;
+    padding: 5rem 0;
+    border-radius: 0.6rem;
+}
+
+.registerForm_rule{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+.registerForm_rule_check{
+    margin-left: 0.4rem;
+    accent-color: $blueColor2;
+}
+.registerForm_rule_text{
+    font-size: 1rem;
+    color: $whiteColor;
+    margin: 0 0.2rem;
+}
+.registerForm_rule_link{
+    font-size: 1rem;
+    color: $blueColor2;
+}

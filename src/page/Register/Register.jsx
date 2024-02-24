@@ -1,8 +1,11 @@
+import RegisterForm from "../../components/template/register/RegisterForm"
 
 
 function Register() {
   return (
-    <div>Register</div>
+    <>
+        <RegisterForm/>
+    </>
   )
 }
 
