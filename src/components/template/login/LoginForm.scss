@@ -1,0 +1,115 @@
+@import '../../../sass/_variable.scss';
+
+.loginForm{
+    display: block;
+    width: 100%;
+    margin: 5rem 0;
+}
+.loginForm_img{
+    width: 100%;
+    background-color: $blackColor;
+    max-height: 100vh;
+    padding: 5rem 0;
+    border-radius: 0.6rem;
+}
+.loginForm_content{
+    display: block;
+    width: 100%;
+    .loginForm_content_icon{
+        font-size: 4rem;
+    }
+    .loginForm_content_title{
+        font-family: iranBlack;
+        font-size: 1.8rem;
+        color: $whiteColor;
+    }
+    .loginForm_content_desc{
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+    }
+}
+
+.form{
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    .formBox{
+        display: block;
+        margin-bottom: 1rem;
+        .formBox_label{
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .formBox_input_icon{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: $blackColor;
+            border-radius: 0.5rem;
+        }
+        .formBox_icon{
+            font-size: 1rem;
+            padding-right: 0.5rem;
+        }
+        .formBox_input{
+            padding-right: 0.4rem;
+        }
+    }
+}
+
+.form_save_forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    .formSave{
+        display: flex;
+        align-items: center;
+        .formSave_check{
+            accent-color: $blueColor2;
+            border-radius: 0.5rem;
+        }
+        .formSave_text{
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .formForget{
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
+.form_btn{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    background-color: $blueColor2;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $whiteColor;
+    outline: none;
+    border: none;
+    &:hover{
+        background-color: $blueColor3;
+    }
+}
+.form_linkRegister{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: $whiteColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}

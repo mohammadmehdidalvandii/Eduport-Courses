@@ -1,8 +1,11 @@
+import LoginForm from "../../components/template/login/LoginForm"
 
 
 function Login() {
   return (
-    <div>Login</div>
+   <>
+    <LoginForm/>
+   </>
   )
 }
 
