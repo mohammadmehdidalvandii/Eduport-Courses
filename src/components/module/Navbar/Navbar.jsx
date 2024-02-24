@@ -80,7 +80,7 @@ function Navbar() {
                                 <NavLink to='/Login' className='navbar_loginRegister_itemLink'>ورود</NavLink>
                             </li>
                             <li className="navbar_LoginRegister_item">
-                                <NavLink to='/' className='navbar_loginRegister_itemLink'>ثبت نام</NavLink>
+                                <NavLink to='/Register' className='navbar_loginRegister_itemLink'>ثبت نام</NavLink>
                             </li>
                         </ul>
                         )}
@@ -146,7 +146,7 @@ function Navbar() {
                                 <NavLink to="/Login" className='navbarRes_loginRegister_link'>ورود </NavLink>
                             </li>
                             <li className="navbarRes_loginRegister_item">
-                                <NavLink to="/" className='navbarRes_loginRegister_link'>ثبت نام</NavLink>
+                                <NavLink to="/Register" className='navbarRes_loginRegister_link'>ثبت نام</NavLink>
                             </li>
                         </ul>
                         )}

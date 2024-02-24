@@ -9,6 +9,7 @@ import Teachers from './page/Teachers/Teachers';
 import TeacherDetails from './page/TeacherDetails/TeacherDetails';
 import Basket from './page/Basket/Basket';
 import Login from './page/Login/Login';
+import Register from './page/Register/Register';
 
 const routes = [
     {path: '/' , element: <Home/>},
@@ -22,6 +23,7 @@ const routes = [
     {path: '/Teacher_d' , element: <TeacherDetails/>},
     {path: '/Basket' , element: <Basket/>},
     {path: '/Login' , element: <Login/>},
+    {path: '/Register' , element: <Register/>},
 ]
 
 
