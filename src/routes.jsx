@@ -8,6 +8,7 @@ import ArticleDetails from './page/ArticleDetails/ArticleDetails';
 import Teachers from './page/Teachers/Teachers';
 import TeacherDetails from './page/TeacherDetails/TeacherDetails';
 import Basket from './page/Basket/Basket';
+import Login from './page/Login/Login';
 
 const routes = [
     {path: '/' , element: <Home/>},
@@ -20,7 +21,9 @@ const routes = [
     {path: '/Teachers' , element: <Teachers/>},
     {path: '/Teacher_d' , element: <TeacherDetails/>},
     {path: '/Basket' , element: <Basket/>},
+    {path: '/Login' , element: <Login/>},
 ]
+
 
 
 export default routes

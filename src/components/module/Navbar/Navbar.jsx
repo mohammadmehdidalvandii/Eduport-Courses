@@ -77,7 +77,7 @@ function Navbar() {
                         {showMenu && (
                         <ul className="navbar_loginRegister_menu">
                             <li className="navbar_loginRegister_item">
-                                <NavLink to='/' className='navbar_loginRegister_itemLink'>ورود</NavLink>
+                                <NavLink to='/Login' className='navbar_loginRegister_itemLink'>ورود</NavLink>
                             </li>
                             <li className="navbar_LoginRegister_item">
                                 <NavLink to='/' className='navbar_loginRegister_itemLink'>ثبت نام</NavLink>
@@ -143,7 +143,7 @@ function Navbar() {
                         {loginRegister && (
                         <ul className="navbarRes_loginRegister_items">
                             <li className="navbarRes_loginRegister_item">
-                                <NavLink to="/" className='navbarRes_loginRegister_link'>ورود </NavLink>
+                                <NavLink to="/Login" className='navbarRes_loginRegister_link'>ورود </NavLink>
                             </li>
                             <li className="navbarRes_loginRegister_item">
                                 <NavLink to="/" className='navbarRes_loginRegister_link'>ثبت نام</NavLink>
