@@ -1,0 +1,98 @@
+@import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
+.courseDetail{
+    display: block;
+    width: 100%;
+    margin: 5rem 0;
+}
+.courseDetail_info{
+    display: block;
+    @include bgBlack;
+    .courseDetail_info_title{
+        display: block;
+        font-family: iranBlack;
+        font-size: 2rem;
+        color: $whiteColor;
+    }
+    .courseDetail_info_desc{
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        line-height: 1.7;
+    }
+}
+.courseDetail_buy{
+    display: block;
+    text-align: center;
+    @include bgBlack;
+    .courseDetail_buy_img{
+        display: block;
+        width: 100%;
+        border-radius: 0.2rem;
+    }
+    .courseDetail_buy_text{
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+    .courseDetail_buy_price{
+        font-family: iranBold;
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: $whiteColor;
+    }
+    .courseDetail_buy_addCourse{
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 1rem;
+        outline: none;
+        border: none;
+        background-color: $blueColor1;
+        border-radius: 0.6rem;
+        color: $whiteColor;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+}
+
+.courseDetail_video{
+    width: 100%;
+    height: 400px;
+}
+
+.courseDetail_content{
+    display: block;
+    @include bgBlack;
+    .courseDetail_content_title{
+        font-family: iranBold;
+        font-size: 1.4rem;
+        color: $whiteColor;
+    }
+}
+
+
+.courseDetail_teacher{
+    display: block;
+    text-align: center;
+    @include bgBlack;
+    .courseDetail_teacher_img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    .courseDetail_teacher_name{
+        font-family: iranBold;
+        font-size: 1.2rem;
+        color: $whiteColor;
+    }
+    .courseDetail_teacher_job{
+        display: block;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .courseDetail_teacher_desc{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+}

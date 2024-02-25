@@ -8,9 +8,9 @@ config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faHeart, faTable } from '@fortawesome/free-solid-svg-icons';
 
-function CourseCard({image , level , title , time , video}) {
+function CourseCard({image , level , title , time , video,id}) {
   return (
-    <NavLink to='/' className="courseCard">
+    <NavLink to={`/Course_d/${id}/${title}`} className="courseCard">
     <img src={image} alt="course-image" className="courseCard_img" />
 
     <div className="courseCard_level_addFavorite">

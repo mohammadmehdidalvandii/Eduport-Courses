@@ -15,3 +15,11 @@
         background-color: $redColor3;
     }
 }
+
+
+@mixin bgBlack {
+    background-color: $blackColor;
+    padding: 1.5rem 1rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
