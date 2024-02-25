@@ -1,0 +1,25 @@
+@import '../../../sass/_variable.scss';
+.accordion{
+    display: block;
+    margin: 1rem 0;
+    padding: 0.6rem;
+    background-color: $bgColor;
+    border-radius: 0.6rem;
+    .accordion_titleIcon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $whiteColor;
+        .accordion_title{
+            font-family: iranBold;
+            font-size: 1.2rem;
+        }
+        .accordion_icon{
+            font-size: 1.2rem;
+        }
+    }
+    .accordion_content{
+        display:block;
+        margin-top: 0.5rem;
+    }
+}
