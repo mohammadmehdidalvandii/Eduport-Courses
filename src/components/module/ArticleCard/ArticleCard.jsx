@@ -3,7 +3,7 @@ import './ArticleCard.scss';
 
 function ArticleCard({image , title , category , desc , creator}) {
   return (
-    <NavLink className="articleCard">
+    <NavLink to='/Article_d' className="articleCard">
     <img src={image} alt="article-image" className="articleCard_img" />
     <span className="articleCard_category">{category}</span>
     <h6 className="articleCard_title">{title}</h6>

@@ -1,8 +1,15 @@
-
+import ArticleDetail from '../../components/template/articleDetails/ArticleDetail'
+import HeaderPage from '../../components/module/HeaderPage/HeaderPage'
 
 function ArticleDetails() {
   return (
-    <div>ArticleDetails</div>
+   <>
+        <HeaderPage
+         title='جزییات مقاله'
+         text='جزییات مقاله'
+        />
+        <ArticleDetail/>
+   </>
   )
 }
 
