@@ -1,8 +1,15 @@
-
+import HeaderPage from '../../components/module/HeaderPage/HeaderPage'
+import Articles from '../../components/template/article/Articles/Articles'
 
 function Article() {
   return (
-    <div>Article</div>
+   <>
+   <HeaderPage
+    title='مقالات'
+    text='مقالات'
+   />
+   <Articles/>
+   </>
   )
 }
 

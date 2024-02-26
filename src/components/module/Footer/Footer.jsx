@@ -26,7 +26,7 @@ function Footer() {
                                 <NavLink to='/' className='footer_item_link'>تماس با ما</NavLink>
                             </li>
                             <li className="footer_item">
-                                <NavLink to='/' className='footer_item_link'>وبلاگ</NavLink>
+                                <NavLink to='/Article' className='footer_item_link'>وبلاگ</NavLink>
                             </li>
                             <li className="footer_item">
                                 <NavLink to='/' className='footer_item_link'>تسویه حساب</NavLink>
