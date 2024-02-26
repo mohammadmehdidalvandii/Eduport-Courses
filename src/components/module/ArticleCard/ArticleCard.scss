@@ -1,0 +1,40 @@
+@import '../../../sass/_variable.scss';
+.articleCard{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    transition: all 0.4s ease-in;
+    &:hover{
+        background-color: $blackColor;
+    }
+    .articleCard_img{
+        width: 100%;
+        border-radius: 0.3rem;
+    }
+    .articleCard_category{
+        font-size: 0.9rem;
+        color: $whiteColor;
+        background-color: $redColor2;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.3rem;
+    }
+    .articleCard_title{
+        display: block;
+        margin: 0.8rem 0;
+        font-family: iranBold;
+        font-size: 1.3rem;
+        color: $whiteColor;
+    }
+    .articleCard_desc{
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $textColor;
+    }
+    .articleCard_creator{
+        display: block;
+        margin: 0.6rem 0;
+        color: $whiteColor;
+    }
+}
