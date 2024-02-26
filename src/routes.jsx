@@ -20,7 +20,7 @@ const routes = [
     {path: '/Article' , element: <Article/>},
     {path: '/Article_d' , element: <ArticleDetails/>},
     {path: '/Teachers' , element: <Teachers/>},
-    {path: '/Teacher_d' , element: <TeacherDetails/>},
+    {path: '/Teacher_d/:id' , element: <TeacherDetails/>},
     {path: '/Basket' , element: <Basket/>},
     {path: '/Login' , element: <Login/>},
     {path: '/Register' , element: <Register/>},

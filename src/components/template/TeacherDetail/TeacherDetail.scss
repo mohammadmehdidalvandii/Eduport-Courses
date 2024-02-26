@@ -1,0 +1,104 @@
+@import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
+.teacherDetail{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem ;
+}
+.teacherDetail_img_score{
+    display: block;
+    text-align: center;
+    width: 100%;
+    @include bgBlack;
+}
+.teacherDetail_img{
+width: 100%;
+border-radius: 0.3rem   ;
+}
+.teacherDetail_score{
+    font-size: 1.3rem;
+    color: $yellowColor2;
+}
+
+.teacherDetail_title{
+    display: block;
+    margin-bottom: 0.6rem;
+    font-family: iranBold;
+    font-size: 1.5rem;
+    color: $whiteColor;
+}
+.teacherDetail_education{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+    .teacherDetail_education_items{
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .teacherDetail_education_item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .teacherDetail_education_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bgColor  ;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.3rem;
+        color: $whiteColor;
+    }
+    .teacherDetail_education_text{
+        display: block;
+        margin-right: 0.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+.teacherDetail_content{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+    .teacherDetail_content_h1{
+        font-family: iranBold;
+        font-size: 1.4rem;
+        color: $whiteColor;
+    }
+    .teacherDetail_content_name{
+        font-family: iranBlack;
+        font-size: 1.6rem;
+        color: $whiteColor;
+    }
+    .teacherDetail_content_job{
+        font-size: 0.9rem;
+    }
+    .teacherDetail_content_desc{
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .teacherDetail_content_items{
+        display: block;
+        width: 100%;
+        .teacherDetail_content_item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .teacherDetail_content_itemIcon{
+            font-size: 1.3rem;
+            color: $blueColor2;
+            margin-left: 0.5rem;
+        }
+        .teacherDetail_content_itemText{
+            font-size: 0.9rem;
+            color: $whiteColor;
+        }
+    }
+}
+

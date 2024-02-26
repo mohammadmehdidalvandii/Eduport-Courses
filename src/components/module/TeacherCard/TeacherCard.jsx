@@ -9,9 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
-function TeacherCard({image , name , job, score , desc, learn}) {
+function TeacherCard({id,image , name , job, score , desc, learn}) {
   return (
-    <NavLink className="teacherCard d-md-flex d-block">
+    <NavLink to={`/Teacher_d/${id}`} className="teacherCard d-md-flex d-block">
     <img
       src={image}
       alt="teacher-image"
