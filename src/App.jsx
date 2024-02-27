@@ -10,12 +10,15 @@ import Footer from "./components/module/Footer/Footer"
 function App() {
   const router = useRoutes(routes)
   const [courses , setCourses] =useState([...db.courses])
+  const [userBasket , setUserBasket] =useState([])
   return (
     <>
     <CoursesContext.Provider
       value={{
         courses,
         setCourses,
+        userBasket,
+        setUserBasket
       }}
     >
     <Navbar/>
