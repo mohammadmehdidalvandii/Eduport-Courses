@@ -41,7 +41,9 @@
             "image":"/assets/images/courses/c1.jpg",
             "title":"آموزش Sketch",
             "time":"2دقیقه1",
-            "video":"5 ویدیو"
+            "video":"5 ویدیو",
+            "price":6500000,
+            "count":1
         },
         {
             "id":2,
@@ -50,7 +52,9 @@
             "image":"/assets/images/courses/c2.jpg",
             "title":"آموزش Photoshop",
             "time":"9ساعت",
-            "video":"65 ویدیو"
+            "video":"65 ویدیو",
+            "price":4300000,
+            "count":1
         },
         {
             "id":3 ,
@@ -59,7 +63,9 @@
             "image":"/assets/images/courses/c3.jpg",
             "title":"آموزش Figma",
             "time":"5دقیقه2",
-            "video":"32 ویدیو"
+            "video":"32 ویدیو",
+            "price":800000,
+            "count":1
         },
         {
             "id":4 ,
@@ -68,7 +74,9 @@
             "image":"/assets/images/courses/c4.jpg",
             "title":"آموزش React-Native",
             "time":"8 ساعت",
-            "video":"43 ویدیو "
+            "video":"43 ویدیو ",
+            "price":7500000,
+            "count":1
         },
         {
             "id":5 ,
@@ -77,7 +85,9 @@
             "image":"/assets/images/courses/c5.jpg",
             "title":"آموزش HTML",
             "time":"2 ساعت",
-            "video":"32 ویدیو"
+            "video":"32 ویدیو",
+            "price":740000,
+            "count":1
         },
         {
             "id":6 ,
@@ -86,7 +96,9 @@
             "image":"/assets/images/courses/c6.jpg",
             "title":"آموزش CSS",
             "time":" 4 ساعت",
-            "video":"49 ویدیو"
+            "video":"49 ویدیو",
+            "price":900000,
+            "count":1
         },
         {
             "id":7 ,
@@ -95,7 +107,9 @@
             "image":"/assets/images/courses/c7.jpg",
             "title":"آموزش Invision",
             "time":"6 ساعت",
-            "video":"75 ویدیو"
+            "video":"75 ویدیو",
+            "price":5400000,
+            "count":1
         },
         {
             "id":8 ,
@@ -104,7 +118,9 @@
             "image":"/assets/images/courses/c8.jpg",
             "title":"آموزش JavaScript",
             "time":"65 ساعت",
-            "video":"130 ویدیو"
+            "video":"130 ویدیو",
+            "price":6800000,
+            "count":1
         },
         {
             "id":9 ,
@@ -113,7 +129,9 @@
             "image":"/assets/images/courses/c9.jpg",
             "title":"آموزش  Laravel",
             "time":"6 ساعت",
-            "video":"35 ویدیو"
+            "video":"35 ویدیو",
+            "price":4250000,
+            "count":1
         },
         {
             "id":10 ,
@@ -122,7 +140,9 @@
             "image":"/assets/images/courses/c10.jpg",
             "title":"آموزش PHP",
             "time":"21 ساعت",
-            "video":"19 ویدیو"
+            "video":"19 ویدیو",
+            "price":6340000,
+            "count":1
         },
         {
             "id":11 ,
@@ -131,7 +151,9 @@
             "image":"/assets/images/courses/c11.jpg",
             "title":"آموزش Bootstrap",
             "time":"12 ساعت",
-            "video":"43 ویدیو"
+            "video":"43 ویدیو",
+            "price":1200000,
+            "count":1
         },
         {
             "id":12 ,
@@ -140,7 +162,9 @@
             "image":"/assets/images/courses/c12.jpg",
             "title":"آموزش Angular",
             "time":"43 ساعت",
-            "video":"87 ویدیو"
+            "video":"87 ویدیو",
+            "price":4600000,
+            "count":1
         },
         {
             "id":13 ,
@@ -149,7 +173,9 @@
             "image":"/assets/images/courses/c13.jpg",
             "title":"آموزش Python",
             "time":"120 ساعت",
-            "video":"145 ویدیو"
+            "video":"145 ویدیو",
+            "price":72000000,
+            "count":1
         }
     ],
     "teachers":[

@@ -16,7 +16,7 @@ const foundCourse = courseData.courses.find((course)=> course.id == parseInt(id)
         title='جزییات دوره'
         text='جزییات دوره'
       />   
-      <CourseDetail {...foundCourse}/>
+      <CourseDetail {...foundCourse} price={foundCourse.price.toLocaleString()}/>
     </>
   )
 }
