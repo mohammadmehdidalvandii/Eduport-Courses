@@ -1,7 +1,7 @@
 import Accordion from '../../module/Accordion/Accordion'
 import './CourseDetail.scss'
-
-
+import {ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 function CourseDetail({title , image , price, addToBasket}) {
 
 
@@ -28,7 +28,10 @@ function CourseDetail({title , image , price, addToBasket}) {
                         <img src={image} alt="" className="courseDetail_buy_img" />
                         <span className="courseDetail_buy_text">قیمت دوره</span>
                         <h4 className="courseDetail_buy_price">{price}  تومان</h4>
-                        <button className="courseDetail_buy_addCourse" onClick={addToBasket}>دریافت</button>
+                        <button className="courseDetail_buy_addCourse" onClick={addToBasket}>
+                        دریافت
+                        <ToastContainer/>
+                     </button>
                     </div>    
                 </div> 
             </div>
