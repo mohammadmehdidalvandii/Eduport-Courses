@@ -93,7 +93,7 @@
     border-radius: 0.5rem;
     position: absolute;
     left: 5px;
-    width: 200px;
+    width: 150px;
     background-color: $blackColor;
     z-index: 999;
 }
@@ -109,6 +109,54 @@
     }
 }
 
+
+.navbar_account{
+    display: block;
+    margin-right: 1rem;
+    position: relative;
+}
+.navbar_account_icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+.navbar_account_items{
+    display: block;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 5px;
+    width: 150px;
+    background-color: $blackColor;
+    z-index: 999;
+    .navbar_account_item:first-child{
+        margin-bottom: 1rem;
+    }
+    .navbar_account_itemLink{
+        display: block;
+        text-decoration: none;
+        color: $textColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+    .navbar_account_itemBtn{
+        outline: none;
+        border: none;
+        background-color: unset;
+        color: $textColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
 
 // navbar Responsive 
 
@@ -176,6 +224,8 @@
         }
     }
 }
+
+
 .navbarRes_menu_search{
     display: flex;
     align-items: center;
@@ -229,6 +279,56 @@
     }
     .navbarRes_loginRegister_link{
         text-decoration: none;
+        color: $textColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+}
+
+
+.navbarRes_account{
+    display: block;
+    margin-right: 1rem;
+    position: relative;
+}
+.navbarRes_account_icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+.navbarRes_account_items{
+    display: block;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    background-color: $blackColor;
+    border-radius: 0.4rem;
+    .navbarRes_account_item{
+        list-style: none;
+    }
+    .navbarRes_account_item:first-child{
+        margin-bottom: 1rem;
+    }
+    .navbarRes_account_itemLink{
+        display: block;
+        text-decoration: none;
+        color: $textColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            color: $blueColor2;
+        }
+    }
+    .navbarRes_account_itemBtn{
+        outline: none;
+        border: none;
+        background-color: unset;
         color: $textColor;
         transition: all 0.4s ease-in;
         &:hover{

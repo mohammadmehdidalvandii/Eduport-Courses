@@ -15,6 +15,12 @@ function Navbar() {
     const [activeMenu , setActiveMenu] = useState('/')
     const [showMenu , setShowMenu] = useState(false)
     const [loginRegister , setLoginRegister] = useState(false)
+    const [accountMenu ,setAccountMenu] = useState(false)
+
+    // logic show account Menu 
+    const handlerShowAccountMenu = ()=>{
+        setAccountMenu(!accountMenu)
+    }
 
     // Logic ActiveMenu
     const location =useLocation()
@@ -70,7 +76,8 @@ function Navbar() {
                             <FontAwesomeIcon icon={faSearch}/>
                         </span>
                     </div>
-                    <div className="navbar_loginRegister">
+                    {/* menu login-register */}
+                    {/* <div className="navbar_loginRegister">
                         <span className="navbar_loginRegister_icon" onClick={handlerShowMenu}>
                         <FontAwesomeIcon icon={faUser}/>
                         </span>
@@ -84,7 +91,25 @@ function Navbar() {
                             </li>
                         </ul>
                         )}
-                    </div>
+                    </div> */}
+                      {/* menu login-register */}
+                      {/* menu account */}
+                      {/* <div className="navbar_account">
+                        <span className="navbar_account_icon" onClick={handlerShowAccountMenu}>
+                            <FontAwesomeIcon icon={faUser}/>
+                        </span>
+                        {accountMenu && (
+                        <ul className="navbar_account_items">
+                            <li className="navbar_account_item">
+                                <NavLink to='/' className='navbar_account_itemLink'>حساب کاربری</NavLink>
+                            </li>
+                            <li className="navbar_account_item">
+                                <button className="navbar_account_itemBtn">خروج</button>
+                            </li>
+                        </ul>
+                        )}
+                      </div> */}
+                         {/* menu account */}
                 </div>
             </div>
         </div>
@@ -136,6 +161,7 @@ function Navbar() {
                         </ul>
                         )}
                     </div>
+                    {/* menu login-register */}
                     <div className="navbarRes_loginRegister">
                         <span className="navbarRes_loginRegister_icon" onClick={handlerShowRes}>
                             <FontAwesomeIcon icon={faUser}/>
@@ -151,6 +177,24 @@ function Navbar() {
                         </ul>
                         )}
                     </div>
+                      {/* menu login-register */}
+                      {/* menu account */}
+                            {/* <div className="navbarRes_account">
+                                <span className="navbarRes_account_icon" onClick={handlerShowAccountMenu}>
+                                    <FontAwesomeIcon icon={faUser}/>
+                                </span>
+                                {accountMenu && (
+                                <div className="navbarRes_account_items">
+                                    <li className="navbarRes_account_item">
+                                        <NavLink to='/' className='navbarRes_account_itemLink'>حساب کاربری</NavLink>
+                                    </li>
+                                    <li className="navbarRes_account_item">
+                                        <button className="navbarRes_account_itemBtn">خروج</button>
+                                    </li>
+                                </div>
+                                )}
+                            </div> */}
+                      {/* menu account */}
                 </div>
             </div>
         </div>
