@@ -1,0 +1,53 @@
+@import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
+.userBasket{
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.wrapper_userBasket{
+    display: block;
+    @include bgBlack;
+}
+.userBasket_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    .userBasket_item_img{
+        width: 120px;
+        border-radius: 0.5rem;
+    }
+    .userBasket_item_name{
+        font-family: iranBold;
+        font-size: 1.4rem;
+        color: $whiteColor;    
+         padding: 1rem 0;
+    }
+    .userBasket_item_price{
+        font-family: iranBold;
+        font-size: 1.4rem;
+        color: $whiteColor;
+    }
+}
+.userBasket_btn{
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    background-color: $blueColor2;
+    width: 120px;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $whiteColor;
+    border-radius: 0.4rem;
+    transition: all 0.4s ease-in;
+    &:hover{
+        background-color: $blueColor3;
+    }
+}

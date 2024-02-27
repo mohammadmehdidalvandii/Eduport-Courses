@@ -16,7 +16,7 @@ function Navbar() {
     const [showMenu , setShowMenu] = useState(false)
     const [loginRegister , setLoginRegister] = useState(false)
     const [accountMenu ,setAccountMenu] = useState(false)
-    const [basketCount ,setBasketCount] = useState(0)
+    const [basketCount ,setBasketCount] = useState(1)
 
     // logic show account Menu 
     const handlerShowAccountMenu = ()=>{
@@ -71,7 +71,7 @@ function Navbar() {
                 </ul>
                     {basketCount !== 0 && (
                         <div className="navbar_basket">
-                        <NavLink to='/' className='navbar_basket_link'>
+                        <NavLink to='/Basket' className='navbar_basket_link'>
                             <FontAwesomeIcon icon={faShoppingCart}/>
                         </NavLink>
                         <span className="navbar_basket_num">{basketCount}</span>
@@ -131,7 +131,7 @@ function Navbar() {
                 </NavLink>
                 {basketCount !== 0 && (
                         <div className="navbar_basket">
-                        <NavLink to='/' className='navbar_basket_link'>
+                        <NavLink to='/Basket' className='navbar_basket_link'>
                             <FontAwesomeIcon icon={faShoppingCart}/>
                         </NavLink>
                         <span className="navbar_basket_num">{basketCount}</span>
