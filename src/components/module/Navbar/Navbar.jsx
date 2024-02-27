@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBars, faSearch, faTimes, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faSearch, faShoppingCart, faTimes, faUser} from "@fortawesome/free-solid-svg-icons";
 
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -16,6 +16,7 @@ function Navbar() {
     const [showMenu , setShowMenu] = useState(false)
     const [loginRegister , setLoginRegister] = useState(false)
     const [accountMenu ,setAccountMenu] = useState(false)
+    const [basketCount ,setBasketCount] = useState(0)
 
     // logic show account Menu 
     const handlerShowAccountMenu = ()=>{
@@ -68,7 +69,14 @@ function Navbar() {
                         <NavLink to='/Contact' className={`navbar_menu_link ${activeMenu === '/Contact' ? "navbar_menu_linkActive" : ""}`}>تماس با ما</NavLink>
                     </li>
                 </ul>
-
+                    {basketCount !== 0 && (
+                        <div className="navbar_basket">
+                        <NavLink to='/' className='navbar_basket_link'>
+                            <FontAwesomeIcon icon={faShoppingCart}/>
+                        </NavLink>
+                        <span className="navbar_basket_num">{basketCount}</span>
+                    </div>
+                    )}
                 <div className="navbar_account_search">
                     <div className="navbar_search">
                         <input type="text" className="navbar_search_input" placeholder='جستجو...'/>
@@ -77,7 +85,7 @@ function Navbar() {
                         </span>
                     </div>
                     {/* menu login-register */}
-                    {/* <div className="navbar_loginRegister">
+                    <div className="navbar_loginRegister">
                         <span className="navbar_loginRegister_icon" onClick={handlerShowMenu}>
                         <FontAwesomeIcon icon={faUser}/>
                         </span>
@@ -91,7 +99,7 @@ function Navbar() {
                             </li>
                         </ul>
                         )}
-                    </div> */}
+                    </div>
                       {/* menu login-register */}
                       {/* menu account */}
                       {/* <div className="navbar_account">
@@ -121,6 +129,14 @@ function Navbar() {
                 <NavLink to='/' className='navbarRes_logo_link'>
                     <img src="/assets/svg/logo-light.svg" alt="logo" className="navbarRes_logo_img" />
                 </NavLink>
+                {basketCount !== 0 && (
+                        <div className="navbar_basket">
+                        <NavLink to='/' className='navbar_basket_link'>
+                            <FontAwesomeIcon icon={faShoppingCart}/>
+                        </NavLink>
+                        <span className="navbar_basket_num">{basketCount}</span>
+                    </div>
+                    )}
                 <div className="navbarRes_loginRegister_menu">
                      <div className="navbarRes_menu">
                         {showMenu ? (

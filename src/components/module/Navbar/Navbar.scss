@@ -43,6 +43,31 @@
     }
 }
 
+.navbar_basket{
+    display: block;
+    position: relative;
+}
+.navbar_basket_link{
+    font-size: 1.5rem;
+    color: $textColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+.navbar_basket_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $blueColor2;
+    border-radius: 50%;
+    top: -1rem;
+    right: -1rem;
+}
+
 .navbar_account_search{
     display: flex;
     align-items: center;
