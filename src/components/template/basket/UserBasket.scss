@@ -9,6 +9,14 @@
     display: block;
     @include bgBlack;
 }
+.userBasket_null{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: iranBlack;
+    font-size: 2rem;
+    color: $redColor2;
+}
 .userBasket_item{
     display: flex;
     align-items: center;
@@ -35,7 +43,10 @@
     }
 }
 .userBasket_btn{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     margin: 0 auto;
     outline: none;
     border: none;

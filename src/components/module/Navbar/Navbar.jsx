@@ -10,13 +10,23 @@ import {faBars, faSearch, faShoppingCart, faTimes, faUser} from "@fortawesome/fr
 
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import coursesContext from '../../../Context/coursesContext';
+import { useContext } from 'react';
 
 function Navbar() {
     const [activeMenu , setActiveMenu] = useState('/')
     const [showMenu , setShowMenu] = useState(false)
     const [loginRegister , setLoginRegister] = useState(false)
     const [accountMenu ,setAccountMenu] = useState(false)
-    const [basketCount ,setBasketCount] = useState(1)
+    const [basketCount ,setBasketCount] = useState(0)
+
+    const courseData =useContext(coursesContext)
+
+    // logic basketCount
+    useEffect(()=>{
+        let numberBasket = courseData.userBasket.length
+        setBasketCount(numberBasket)
+    },[courseData.userBasket])
 
     // logic show account Menu 
     const handlerShowAccountMenu = ()=>{
