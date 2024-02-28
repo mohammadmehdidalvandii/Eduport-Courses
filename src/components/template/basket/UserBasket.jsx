@@ -19,6 +19,10 @@ function UserBasket() {
                                 <img src={basket.image}alt=" user basket image" className="userBasket_item_img" />
                                     <span className="userBasket_item_name">{basket.title}</span>
                                     <span className="userBasket_item_price">قیمت {basket.price.toLocaleString()}</span>
+                                    <div className="userBasket_buttons">
+                                        <button className="userBasket_button btn_delete">حذف</button>
+                                        <NavLink to={`/Course_d/${basket.id}/${basket.title}`} className="userBasket_button btn_show">مشاهده</NavLink>
+                                    </div>
                             </div>
                             ))
                     )}

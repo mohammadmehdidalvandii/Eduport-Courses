@@ -37,9 +37,48 @@
          padding: 1rem 0;
     }
     .userBasket_item_price{
+        display: block;
+        padding-bottom: 0.5rem;
         font-family: iranBold;
         font-size: 1.4rem;
         color: $whiteColor;
+    }
+}
+
+
+.userBasket_buttons{
+    display: block;
+
+    .userBasket_button{
+        display: block;
+        width: 120px;
+        height: 2.5rem;
+        outline: none;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: unset;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+    .btn_delete{
+        background-color: $redColor2;
+        margin-bottom: 1rem;
+        transition: all 0.4s ease-in;
+        &:hover{
+            background-color: $redColor3;
+        }
+    }
+    .btn_show{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: $blueColor2;
+        transition: all 0.4s ease-in;
+        &:hover{
+            background-color: $blueColor3;
+        }
     }
 }
 .userBasket_btn{
@@ -62,3 +101,4 @@
         background-color: $blueColor3;
     }
 }
+
