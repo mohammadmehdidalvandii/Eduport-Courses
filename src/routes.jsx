@@ -10,6 +10,7 @@ import TeacherDetails from './page/TeacherDetails/TeacherDetails';
 import Basket from './page/Basket/Basket';
 import Login from './page/Login/Login';
 import Register from './page/Register/Register';
+import Search from './page/Search/Search';
 
 const routes = [
     {path: '/' , element: <Home/>},
@@ -24,6 +25,7 @@ const routes = [
     {path: '/Basket' , element: <Basket/>},
     {path: '/Login' , element: <Login/>},
     {path: '/Register' , element: <Register/>},
+    {path: '/Search' , element: <Search/>},
 ]
 
 
