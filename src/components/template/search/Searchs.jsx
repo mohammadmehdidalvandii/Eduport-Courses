@@ -7,14 +7,22 @@ import CourseCard from '../../module/CourseCard/CourseCard';
 function Searchs() {
     const courseData = useContext(coursesContext);
     const [courses , setCourses] = useState([])
+    const [loading , setLoading] =useState(true)
 
     // result search client
     const {value} =useParams()
     useEffect(()=>{
         const searchCourse = courseData.courses.filter(course => course.title.toLowerCase().includes(value.toLowerCase()))
         setCourses(searchCourse)
+        setTimeout(()=>{
+            setLoading(false)
+        },4000)
     },[value, courseData.courses])
-    
+
+
+    if(loading){
+        return <h5 className='loading_text'>منتطر بمانید ...</h5>
+    }
   return (
     <section className="search">
         <div className="container">
