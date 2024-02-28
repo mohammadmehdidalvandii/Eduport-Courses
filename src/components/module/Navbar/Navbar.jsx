@@ -39,6 +39,8 @@ function Navbar() {
     useEffect(()=>{
         const pathName = location.pathname
         setActiveMenu(pathName)
+        window.scroll(0,0)
+        setShowMenu(false)
     },[location])
 
     // Logic show MENU
