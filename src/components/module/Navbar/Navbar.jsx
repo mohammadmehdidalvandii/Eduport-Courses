@@ -53,6 +53,9 @@ function Navbar() {
     // logic show account Menu 
     const handlerShowAccountMenu = ()=>{
         setAccountMenu(!accountMenu)
+        setTimeout(()=>{
+            setAccountMenu(false)
+        },3000)
     }
 
     // Logic ActiveMenu
@@ -68,14 +71,23 @@ function Navbar() {
     // Logic show MENU
     const handlerShowMenu = ()=>{
         setShowMenu(!showMenu)
+        setTimeout(()=>{
+            setShowMenu(false)
+        },3000)
     }
     const handlerShowRes = ()=>{
         setLoginRegister(!loginRegister)
+        setTimeout(()=>{
+            setLoginRegister(false)
+        },3000)
     }
 
     // logic show Menu responsive
     const handlerShowMeneRes = ()=>{
         setShowMenu(!showMenu)
+        setTimeout(()=>{
+            setShowMenu(false)
+        },3000)
     }
   return (
     <>
