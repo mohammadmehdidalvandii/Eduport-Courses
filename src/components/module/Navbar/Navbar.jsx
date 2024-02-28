@@ -12,6 +12,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import coursesContext from '../../../Context/coursesContext';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
     const [activeMenu , setActiveMenu] = useState('/')
@@ -19,8 +20,29 @@ function Navbar() {
     const [loginRegister , setLoginRegister] = useState(false)
     const [accountMenu ,setAccountMenu] = useState(false)
     const [basketCount ,setBasketCount] = useState(0)
+    const [search , setSearch] = useState('')
 
     const courseData =useContext(coursesContext)
+
+    const navigate = useNavigate()
+
+    // start search logic
+    const handlerSearchClick =()=>{
+        if(search.trim()){
+            navigate(`/Search/${search}`)
+            setSearch('')
+        }
+    }
+    const handlerEnterSearch = (e)=>{
+        if(e.key === "Enter"){
+            if(search.trim()){
+                navigate(`/Search/${search}`)
+                setSearch('')
+            }
+        }
+    }
+    // start search logic
+
 
     // logic basketCount
     useEffect(()=>{
@@ -91,9 +113,15 @@ function Navbar() {
                     )}
                 <div className="navbar_account_search">
                     <div className="navbar_search">
-                        <input type="text" className="navbar_search_input" placeholder='جستجو...'/>
+                        <input type="text"
+                         className="navbar_search_input" 
+                          placeholder='جستجو نام محصول'
+                          value={search}
+                          onChange={e=>setSearch(e.target.value)}
+                          onKeyDown={handlerEnterSearch}
+                          />
                         <span className="navbar_search_icon">
-                            <FontAwesomeIcon icon={faSearch}/>
+                            <FontAwesomeIcon icon={faSearch} onClick={handlerSearchClick}/>
                         </span>
                     </div>
                     {/* menu login-register */}
