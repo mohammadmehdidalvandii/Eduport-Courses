@@ -2,10 +2,23 @@ import './UserBasket.scss';
 import CoursesContext from '../../../Context/coursesContext'
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import swal from 'sweetalert';
 
 function UserBasket() {
     // Context Api 
     const courseData = useContext(CoursesContext)
+
+    // handler Delete Course 
+    const handlerDeleteCourse = ()=>{
+        let newUserCourse = courseData.userBasket.filter(basket => basket.id  !==  basket.id)
+        courseData.setUserBasket(newUserCourse)
+        swal({
+            icon:"error",
+            text:"دوره از سبد خرید حذف گردید.",
+            buttons:"باشه"
+        })
+    }
+
   return (
    <section className="userBasket">
         <div className="container">
@@ -20,7 +33,9 @@ function UserBasket() {
                                     <span className="userBasket_item_name">{basket.title}</span>
                                     <span className="userBasket_item_price">قیمت {basket.price.toLocaleString()}</span>
                                     <div className="userBasket_buttons">
-                                        <button className="userBasket_button btn_delete">حذف</button>
+                                        <button className="userBasket_button btn_delete" onClick={handlerDeleteCourse}>
+                                            
+                                            حذف</button>
                                         <NavLink to={`/Course_d/${basket.id}/${basket.title}`} className="userBasket_button btn_show">مشاهده</NavLink>
                                     </div>
                             </div>
