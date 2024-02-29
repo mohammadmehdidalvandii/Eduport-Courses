@@ -11,6 +11,7 @@ import Basket from './page/Basket/Basket';
 import Login from './page/Login/Login';
 import Register from './page/Register/Register';
 import Search from './page/Search/Search';
+import PanelAdmin from './page/PanelAdmin/PanelAdmin';
 
 const routes = [
     {path: '/' , element: <Home/>},
@@ -26,6 +27,7 @@ const routes = [
     {path: '/Login' , element: <Login/>},
     {path: '/Register' , element: <Register/>},
     {path: '/Search/:value' , element: <Search/>},
+    {path: '/P_admin' , element: <PanelAdmin/>},
 ]
 
 

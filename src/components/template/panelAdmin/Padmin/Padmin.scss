@@ -1,0 +1,54 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.pAdmin{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+}
+.wrapper_pAdmin{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+    .pAdmin_linkLogo{
+        display: block;
+        .pAdmin_logoLink_img{
+            max-width: 250px;
+        }
+    }
+}
+.pAdmin_items{
+    display: block;
+    list-style: none;
+    margin-top: 2rem;
+}
+.pAdmin_item{
+ display: flex;
+ align-items: center;
+ margin-bottom: 1.5rem;
+ .pAdmin_item_link{
+    outline: none;
+    border: none;
+    background-color: unset;
+     color: $whiteColor;
+     width: 100%;
+     padding: 0.3rem;
+     border-radius: 0.3rem;
+     transition: all 0.4s ease-in;
+     &:hover{
+         background-color: $bgColor;
+         color: $blueColor2;
+     }  
+     .pAdmin_item_linkIcon{
+        font-size: 1.5rem;
+        margin-left: 0.3rem;
+        }
+        .pAdmin_item_linkText{
+            font-size: 1.1rem;
+        }  
+    }
+    .pAdmin_item_link_active{
+        background-color: $bgColor;
+        color: $blueColor2;
+    }
+}
