@@ -23,3 +23,19 @@
     border-radius: 0.6rem;
     margin-bottom: 1rem;
 }
+
+
+@mixin titlePanel {
+    font-family: iranBold;
+    font-size: 1.7rem;
+    color: $whiteColor;
+    margin-bottom: 1rem;
+}
+
+@mixin bgColor {
+    display: block;
+    padding: 0.8rem ;
+    width: 100%;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+}

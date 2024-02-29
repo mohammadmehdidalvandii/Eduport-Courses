@@ -1,0 +1,139 @@
+@import '../../../../sass/_mixin.scss';
+@import '../../../../sass/_variable.scss';
+.adminDashboard{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.adminDashboard_title{
+  @include titlePanel;
+}
+
+.adminDashboard_item{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: $bgColor;
+    border-radius: 0.6rem;
+    color: $whiteColor;
+    margin-bottom: 1rem;
+    .adminDashboard_content_num{
+        display: block;
+        font-family: iranBold;
+        font-size: 2rem;
+    }
+    .adminDashboard_content_text{
+        display: block;
+        font-size: 1.2rem;
+        color: $yellowColor2;
+    }
+}
+
+.adminDashboard_charts{
+  @include bgColor;
+    .adminDashboard_charts_title{
+        display: block;
+        margin-right: 2rem;
+        font-family: iranBold;
+        font-size: 1.5rem;
+        color: $whiteColor;
+    }
+}
+
+.adminDashboard_ticket{
+    @include bgColor;
+    margin-top: 1rem;
+    .adminDashboard_ticket_title{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+}
+
+.adminDashboard_ticket_items{
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.adminDashboard_ticket_item{
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border: 1px solid $textColor;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    .adminDashboard_ticket_img{
+        width: 80px;
+        border-radius: 50%;
+    }
+    .adminDashboard_ticket_content{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        .adminDashboard_ticket_name{
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: $whiteColor;
+        }
+        .adminDashboard_ticket_number{
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        .adminDashboard_ticket_time{
+            font-size: 0.9rem;
+        
+        }
+    }
+}
+
+.adminDashboard_items{
+    display: block;
+    width: 100%;
+    @include bgColor;
+}
+.adminDashboard_item_title{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $whiteColor;
+}
+.adminDashboard_teacher_items{
+    display: block;
+    margin-top: 1rem;
+}
+.adminDashboard_teacher_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.adminDashboard_teacher_imgName{
+    display: flex;
+    align-items: center;
+}
+.adminDashboard_teacher_img{
+width: 70px;
+border-radius: 50%;
+}
+.adminDashboard_teacher_name{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $whiteColor;
+    margin-right: 0.4rem;
+}
+.adminDashboard_teacher_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: $whiteColor;
+    background-color: $blackColor;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}

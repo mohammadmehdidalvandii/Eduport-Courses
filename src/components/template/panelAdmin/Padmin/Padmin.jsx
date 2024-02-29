@@ -3,6 +3,7 @@ import './Padmin.scss'
 import { MdOutlineHome , MdMessage } from "react-icons/md";
 import { FaUserGraduate, FaUserEdit, FaChartBar   } from "react-icons/fa";
 import { useState } from 'react';
+import AdminDashboard from '../AdminDashboard/AdminDashboard';
 
 function Padmin() {
     const [adminMenu , setAdminMenu ]= useState("dashboard")
@@ -65,7 +66,7 @@ function Padmin() {
                     </div>
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-12">
-                    {adminMenu === 'dashboard' &&(<h1>this is dashboard</h1>)}
+                    {adminMenu === 'dashboard' &&(<AdminDashboard/>)}
                     {adminMenu === 'student' &&(<h1>this is student</h1>)}
                     {adminMenu === 'teacher' &&(<h1>this is teacher</h1>)}
                     {adminMenu === 'comments' &&(<h1>this is comments</h1>)}
