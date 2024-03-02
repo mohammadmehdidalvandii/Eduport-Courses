@@ -1,0 +1,9 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.adminComment{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+
+

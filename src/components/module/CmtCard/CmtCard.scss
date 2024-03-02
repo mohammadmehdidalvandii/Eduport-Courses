@@ -1,0 +1,101 @@
+@import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
+.cmtCard{
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid $textColor;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.cmtCard_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+    .cmtCard_info_name{
+        font-size: 1rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+    .cmtCard_info_time{
+        margin: 0 1rem;
+        font-size: 0.9rem;
+        color: $redColor2;
+    }
+    .cmtCard_info_score{
+        font-size: 1rem;
+        font-weight: 700;
+        color: $yellowColor2;
+    }
+}
+
+.cmtCard_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.6rem;
+    .cmtCard_item{
+        display: block;
+        .cmtCard_item_title{
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: $whiteColor;
+        }
+        .cmtCard_item_text{
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+    }
+        .cmtCard_item_buttons{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .cmtCard_item_btn{
+                margin: 0 0.6rem;
+                outline: none;
+                border: none ;
+                background-color: unset;
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 0.3rem;
+                border-radius: 0.3rem;
+                margin-bottom: 0.5rem;
+            }
+            .btn_confirm{
+                background-color: $greenColor2;
+                color: $greenColor3;
+                transition: all 0.4s ease-in;
+                &:hover{
+                    background-color: $greenColor1;
+                    color: $whiteColor;
+                }
+            }
+            .btn_delete{
+                background-color: $redColor1;
+                color: $redColor3;
+                transition: all 0.4s ease-in;
+                &:hover{
+                    background-color: $redColor2;
+                    color: $whiteColor;
+                }
+            }
+            .btn_show{
+                background-color: $blueColor1;
+                color: $blueColor3;
+                transition: all 0.4s ease-in;
+                &:hover{
+                    background-color: $blueColor2;
+                    color: $whiteColor;
+                }
+            }
+        }
+}

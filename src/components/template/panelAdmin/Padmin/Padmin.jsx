@@ -6,6 +6,7 @@ import { useState } from 'react';
 import AdminDashboard from '../AdminDashboard/AdminDashboard';
 import AdminStudent from '../AdminStudent/AdminStudent';
 import AdminTeacher from '../AdminTeacher/AdminTeacher';
+import AdminComment from '../AdminComment/AdminComment';
 
 function Padmin() {
     const [adminMenu , setAdminMenu ]= useState("dashboard")
@@ -71,7 +72,7 @@ function Padmin() {
                     {adminMenu === 'dashboard' &&(<AdminDashboard/>)}
                     {adminMenu === 'student' &&(<AdminStudent/>)}
                     {adminMenu === 'teacher' &&(<AdminTeacher/>)}
-                    {adminMenu === 'comments' &&(<h1>this is comments</h1>)}
+                    {adminMenu === 'comments' &&(<AdminComment/>)}
                     {adminMenu === 'income' &&(<h1>this is income</h1>)}
                 </div>
             </div>
