@@ -27,6 +27,15 @@ function AdminTeacher() {
         <div className="col-lg-4 col-md-6 col-sm-12">
             <TeachCard/>
         </div>
+        <div className="col-lg-4 col-md-6 col-sm-12">
+            <TeachCard/>
+        </div>
+        <div className="col-lg-4 col-md-6 col-sm-12">
+            <TeachCard/>
+        </div>
+        <div className="col-lg-4 col-md-6 col-sm-12">
+            <TeachCard/>
+        </div>
       </div>
     </section>
   );
