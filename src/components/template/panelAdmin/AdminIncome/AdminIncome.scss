@@ -1,0 +1,27 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.adminIncome{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+
+.adminIncome_item{
+    display: block;
+    background-color: $bgColor;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    .adminIncome_title{
+        font-family: iranBlack;
+        font-size: 1.7rem;
+        color: $whiteColor;
+    }
+    .adminIncome_text{
+        display: block;
+        margin-top: 0.6rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $yellowColor2;
+    }
+}

@@ -7,6 +7,7 @@ import AdminDashboard from '../AdminDashboard/AdminDashboard';
 import AdminStudent from '../AdminStudent/AdminStudent';
 import AdminTeacher from '../AdminTeacher/AdminTeacher';
 import AdminComment from '../AdminComment/AdminComment';
+import AdminIncome from '../AdminIncome/AdminIncome';
 
 function Padmin() {
     const [adminMenu , setAdminMenu ]= useState("dashboard")
@@ -73,7 +74,7 @@ function Padmin() {
                     {adminMenu === 'student' &&(<AdminStudent/>)}
                     {adminMenu === 'teacher' &&(<AdminTeacher/>)}
                     {adminMenu === 'comments' &&(<AdminComment/>)}
-                    {adminMenu === 'income' &&(<h1>this is income</h1>)}
+                    {adminMenu === 'income' &&(<AdminIncome/>)}
                 </div>
             </div>
         </div>
