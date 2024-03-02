@@ -1,0 +1,95 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.studentCard{
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid $textColor;
+    border-radius: 0.5rem;
+}
+.studentCard_info{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+    .studentCard_info_img{
+        width: 70px;
+        border-radius: 50%;
+    }
+    .studentCard_info_name{
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+        margin-right: 0.3rem;
+    }
+}
+
+.studentCard_items{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: 1px solid $textColor;
+    .studentCard_item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        .studentCard_item_title{
+            font-size: 1.1rem;
+            color: $whiteColor;
+        }
+        .studentCard_item_text{
+            font-size: 0.9rem;
+            
+        }
+    }
+}
+.studentCard_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+.studentCard_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: $whiteColor;
+    outline: none;
+    border: none;
+    background-color: unset;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin:0 1rem;
+}
+.studentCard_btn .studentCard_btn_text{
+    visibility: hidden;
+    width: 80px;
+    background-color: $bgColor;
+    color: $whiteColor;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.studentCard_btn:hover .studentCard_btn_text{
+    visibility: visible;
+}
+.studentCard_btn_icon{
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
+.studentCard_btn_text{
+    font-size: 1.1rem;
+}
