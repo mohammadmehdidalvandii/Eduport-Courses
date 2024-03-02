@@ -1,0 +1,8 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.adminTeacher{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}

@@ -5,6 +5,7 @@ import { FaUserGraduate, FaUserEdit, FaChartBar   } from "react-icons/fa";
 import { useState } from 'react';
 import AdminDashboard from '../AdminDashboard/AdminDashboard';
 import AdminStudent from '../AdminStudent/AdminStudent';
+import AdminTeacher from '../AdminTeacher/AdminTeacher';
 
 function Padmin() {
     const [adminMenu , setAdminMenu ]= useState("dashboard")
@@ -69,7 +70,7 @@ function Padmin() {
                 <div className="col-lg-9 col-md-9 col-sm-12">
                     {adminMenu === 'dashboard' &&(<AdminDashboard/>)}
                     {adminMenu === 'student' &&(<AdminStudent/>)}
-                    {adminMenu === 'teacher' &&(<h1>this is teacher</h1>)}
+                    {adminMenu === 'teacher' &&(<AdminTeacher/>)}
                     {adminMenu === 'comments' &&(<h1>this is comments</h1>)}
                     {adminMenu === 'income' &&(<h1>this is income</h1>)}
                 </div>

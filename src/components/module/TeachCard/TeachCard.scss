@@ -1,0 +1,70 @@
+@import '../../../sass/_variable.scss';
+@import  '../../../sass/_mixin.scss';
+
+
+.teachCard{
+    display: block;
+    width: 100%;
+    border: 1px solid $textColor;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+.teachCard_info{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+    .teachCard_info_img{
+        width: 70px;
+        border-radius: 50%;
+    }
+    .teachCard_info_name{
+        font-size: 1rem;
+        color: $whiteColor;
+        margin-right: 0.5rem;
+    }
+}
+
+.teachCard_items{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: 1px solid $textColor;
+    .teachCard_item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .teachCard_item_title{
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: $whiteColor;
+        }
+        .teachCard_item_text{
+            font-size: 1rem;
+        }
+    }
+}
+
+.teachCard_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.teachCard_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: $bgColor;
+    border-radius: 0.3rem;
+    color: $whiteColor;
+    margin: 0 1rem;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+}
