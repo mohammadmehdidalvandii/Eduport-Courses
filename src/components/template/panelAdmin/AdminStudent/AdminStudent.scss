@@ -1,0 +1,42 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.adminStudent{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.adminStudent_search{
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+}
+.adminStudent_search_box{
+    display:flex;
+    align-items: center;
+    width: 600px;
+    height: 2.5rem;
+    background-color: $bgColor;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    .adminStudent_search_input{
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: unset;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+        padding-right: 0.3rem;
+    }
+    .adminStudent_search_icon{
+    font-size: 1.5rem;  
+    font-weight: 700;
+    padding-left: 0.3rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }
+    }
+}

@@ -1,9 +1,10 @@
-@import '../../../../sass/_variable.scss';
-@import '../../../../sass/_mixin.scss';
+@import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
 
 .studentCard{
     display: block;
     width: 100%;
+    margin-bottom: 1rem;
     padding: 0.8rem;
     border: 1px solid $textColor;
     border-radius: 0.5rem;
