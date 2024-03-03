@@ -12,6 +12,7 @@ import Login from './page/Login/Login';
 import Register from './page/Register/Register';
 import Search from './page/Search/Search';
 import PanelAdmin from './page/PanelAdmin/PanelAdmin';
+import PanelTeacher from './page/PanelTeacher/PanelTeacher';
 
 const routes = [
     {path: '/' , element: <Home/>},
@@ -28,6 +29,7 @@ const routes = [
     {path: '/Register' , element: <Register/>},
     {path: '/Search/:value' , element: <Search/>},
     {path: '/P_admin' , element: <PanelAdmin/>},
+    {path: '/P_teacher' , element: <PanelTeacher/>},
 ]
 
 
