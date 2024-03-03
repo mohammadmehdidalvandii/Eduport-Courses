@@ -1,0 +1,81 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+
+.teacherCourses{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+.teacherCourses_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: $bgColor;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    .teacherCourses_item_info{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .teacherCourses_info_img{
+            width: 100px;
+            border-radius: 0.3rem;
+        }
+        .teacherCourses_info_name{
+            display: block;
+            margin: 0.4rem 0;
+            font-family: iranBold;
+            font-size: 1.2rem;
+            margin-right: 0.3rem;
+        }
+    }
+    .teacherCourses_item_student{
+        font-family: iranBold;
+        font-size: 1.2rem;
+        margin-right: 0.3rem;
+    }
+    .teacherCourses_item_status{
+        font-family: iranBold;
+        font-size: 1.2rem;
+        margin-right: 0.3rem;
+        color: $yellowColor2;
+    }
+    .teacherCourses_item_action{
+        display: flex;
+        align-items: center;
+        margin: 0.4rem 0;
+        .teacherCourses_item_btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            outline: none;
+            border: none;
+            background-color: unset;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+        .btn_edit{
+            background-color: $greenColor1;
+            color: $greenColor3;
+            transition: all 0.4s ease-in;
+            &:hover{
+                background-color: $greenColor2;
+            }
+        }
+        .btn_remove{
+            background-color: $redColor1;
+            color: $redColor2;
+            transition: all 0.4s ease-in;
+            &:hover{
+                background-color: $redColor3;
+                color: $whiteColor;
+            }
+        }
+    }
+}
