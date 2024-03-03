@@ -3,6 +3,7 @@ import { MdOutlineGridOn, MdPerson ,MdOutlineAddCircle   } from "react-icons/md"
 import { FaThList , FaChartBar, FaShoppingBasket , FaRegCommentDots } from "react-icons/fa";
 import { RxExit } from "react-icons/rx";
 import { useState } from 'react';
+import TeacherDashboard from '../TeacherDashboard/TeacherDashboard';
 
 
 
@@ -78,7 +79,7 @@ function PTeacher() {
                     </div>
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-12">
-                        {menuTeacher === "dashboard" && (<h1>this is dashboard</h1>)}
+                        {menuTeacher === "dashboard" && (<TeacherDashboard/>)}
                         {menuTeacher === "list-courses" && (<h1>this is list-courses</h1>)}
                         {menuTeacher === "income" && (<h1>this is income</h1>)}
                         {menuTeacher === "list-student" && (<h1>this is list-student</h1>)}

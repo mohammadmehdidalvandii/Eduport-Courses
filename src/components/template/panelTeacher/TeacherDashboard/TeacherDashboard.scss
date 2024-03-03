@@ -1,0 +1,42 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.teacherDashboard{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.teacherDashboard_item{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    .teacherDashboard_item_title{
+        font-family: iranBlack;
+        font-size: 1.9rem;
+        color: $yellowColor2;
+    }
+    .teacherDashboard_item_number{
+        display: block;
+        margin-top: 0.7rem;
+        font-family: iranBold;
+        font-size: 1.5rem;
+        color: $redColor3;
+    }
+}
+
+.teacherDashboard_seenCourse{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $textColor;
+    border-radius: 0.5rem;
+}
+.teacherDashboard_seenCourse_title{
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $whiteColor;
+}
