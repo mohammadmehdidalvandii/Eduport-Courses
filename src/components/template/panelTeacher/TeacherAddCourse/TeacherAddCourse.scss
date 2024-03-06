@@ -1,0 +1,76 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.teacherAddCourse{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+.teacherAddCourse_title{
+    @include titlePanel
+}
+
+.teacherAddCourse_form{
+    display: block;
+    width: 100%;
+}
+.teacherAddCourse_Box{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    .teacherAddCourse_boxLabel{
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+    .teacherAddCourse_boxInput{
+        width: 100%;
+        height: 2.5rem;
+        outline: none;
+        border: 1px solid $textColor;
+        border-radius: 0.4rem;
+        background-color: $bgColor;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+        padding: 0.4rem;
+    }
+    .teacherAddCourse_boxText{
+        width: 100%;
+        height: 6rem;
+        outline: none;
+        border: 1px solid $textColor;
+        border-radius: 0.4rem;
+        background-color: $bgColor;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $whiteColor;
+        padding: 0.4rem;
+    }
+}
+
+.teacherAddCourse_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 20px;
+}
+.teacherAddCourse_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: $blueColor2;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $whiteColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        background-color: $blueColor3;
+    }
+}
