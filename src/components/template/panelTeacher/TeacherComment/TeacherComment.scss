@@ -1,0 +1,10 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.teacherComment{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.teacherComment_title{
+  @include titlePanel
+}
