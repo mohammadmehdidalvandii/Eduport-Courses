@@ -6,8 +6,7 @@
     @include bgBlack;
 }
 .TeacherOrder_title{
-    font-family: iranBlack;
-    font-size: 1.4rem;
+  @include titlePanel
 }
 
 .teacherOrder_item{
