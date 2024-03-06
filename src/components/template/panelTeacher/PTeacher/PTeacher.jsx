@@ -7,6 +7,7 @@ import TeacherDashboard from '../TeacherDashboard/TeacherDashboard';
 import TeacherCourses from '../TeacherCourses/TeacherCourses';
 import TeacherIncome from '../TeacherIncome/TeacherIncome';
 import TeacherStudent from '../TeacherStudent/TeacherStudent';
+import TeacherOrder from '../TeacherOrder/TeacherOrder';
 
 
 
@@ -86,7 +87,7 @@ function PTeacher() {
                         {menuTeacher === "list-courses" && (<TeacherCourses/>)}
                         {menuTeacher === "income" && (<TeacherIncome/>)}
                         {menuTeacher === "list-student" && (<TeacherStudent/>)}
-                        {menuTeacher === "list-order" && (<h1>this is list-order</h1>)}
+                        {menuTeacher === "list-order" && (<TeacherOrder/>)}
                         {menuTeacher === "comment" && (<h1>this is comment</h1>)}
                         {menuTeacher === "add-course" && (<h1>this is add-course</h1>)}
                 </div>

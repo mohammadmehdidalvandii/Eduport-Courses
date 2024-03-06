@@ -1,0 +1,35 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.teacherOrder{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.TeacherOrder_title{
+    font-family: iranBlack;
+    font-size: 1.4rem;
+}
+
+.teacherOrder_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.4rem;
+    border: 1px solid $yellowColor2;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+.teacherOrder_item_text{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+.teacherOrder_item_text sub{
+    display: block;
+    margin-right: 0.4rem;
+    font-size: 1rem;
+    color: $whiteColor;
+}
