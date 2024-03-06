@@ -1,0 +1,49 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.teacherStudent{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+.teacherStudent_title{
+    display: block;
+    width: 100%;
+    font-family: iranBold;
+    font-size: 1.3rem;
+    color: $whiteColor;
+}
+.teacherStudent_search{
+    display: flex;;
+   margin-top: 1rem;
+    width: 600px;
+    height: 2.5rem;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.teacherStudent_search_input{
+    outline: none;
+    border: none;
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+    padding-right: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $whiteColor;
+}
+.teacherStudent_search_btn{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    height: 100%;
+    background-color: unset; 
+    font-size: 2rem;
+    color: $textColor;
+    transition: all 0.4s ease-in;
+    &:hover{
+        color: $blueColor2;
+    }    
+}

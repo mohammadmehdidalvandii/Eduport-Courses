@@ -6,6 +6,7 @@ import { useState } from 'react';
 import TeacherDashboard from '../TeacherDashboard/TeacherDashboard';
 import TeacherCourses from '../TeacherCourses/TeacherCourses';
 import TeacherIncome from '../TeacherIncome/TeacherIncome';
+import TeacherStudent from '../TeacherStudent/TeacherStudent';
 
 
 
@@ -84,7 +85,7 @@ function PTeacher() {
                         {menuTeacher === "dashboard" && (<TeacherDashboard/>)}
                         {menuTeacher === "list-courses" && (<TeacherCourses/>)}
                         {menuTeacher === "income" && (<TeacherIncome/>)}
-                        {menuTeacher === "list-student" && (<h1>this is list-student</h1>)}
+                        {menuTeacher === "list-student" && (<TeacherStudent/>)}
                         {menuTeacher === "list-order" && (<h1>this is list-order</h1>)}
                         {menuTeacher === "comment" && (<h1>this is comment</h1>)}
                         {menuTeacher === "add-course" && (<h1>this is add-course</h1>)}
