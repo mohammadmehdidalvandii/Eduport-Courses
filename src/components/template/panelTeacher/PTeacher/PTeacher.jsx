@@ -5,6 +5,7 @@ import { RxExit } from "react-icons/rx";
 import { useState } from 'react';
 import TeacherDashboard from '../TeacherDashboard/TeacherDashboard';
 import TeacherCourses from '../TeacherCourses/TeacherCourses';
+import TeacherIncome from '../TeacherIncome/TeacherIncome';
 
 
 
@@ -82,7 +83,7 @@ function PTeacher() {
                 <div className="col-lg-9 col-md-9 col-sm-12">
                         {menuTeacher === "dashboard" && (<TeacherDashboard/>)}
                         {menuTeacher === "list-courses" && (<TeacherCourses/>)}
-                        {menuTeacher === "income" && (<h1>this is income</h1>)}
+                        {menuTeacher === "income" && (<TeacherIncome/>)}
                         {menuTeacher === "list-student" && (<h1>this is list-student</h1>)}
                         {menuTeacher === "list-order" && (<h1>this is list-order</h1>)}
                         {menuTeacher === "comment" && (<h1>this is comment</h1>)}
