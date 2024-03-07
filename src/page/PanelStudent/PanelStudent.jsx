@@ -1,8 +1,11 @@
+import Pstudent from "../../components/template/panelStudent/Pstudent/Pstudent"
 
 
 function PanelStudent() {
   return (
-    <div>PanelStudent</div>
+    <>
+    <Pstudent/>
+    </>
   )
 }
 
