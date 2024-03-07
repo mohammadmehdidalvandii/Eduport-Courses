@@ -1,0 +1,12 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+
+.studentListCourse{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+.studentListCourse_title{
+    @include titlePanel;
+}
+

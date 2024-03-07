@@ -1,0 +1,37 @@
+@import '../../../sass/_mixin.scss';
+@import '../../../sass/_variable.scss';
+
+.studentCourse{
+    display: block;
+    width: 100%;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    .studentCourse_img{
+        width: 100%;
+    }
+    .studentCourse_name{
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $whiteColor;
+    }
+    .studentCourse_link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        width: 100px;
+        height: 2.5rem;
+        background-color: $blueColor2;
+        color: $whiteColor;
+        transition: all 0.4s ease-in;
+        &:hover{
+            background-color: $blueColor3;
+        }
+    }
+}
