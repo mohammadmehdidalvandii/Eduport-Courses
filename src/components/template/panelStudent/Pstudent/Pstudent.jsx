@@ -3,6 +3,7 @@ import './Pstudent.scss';
 import { MdOutlineGridView , MdExitToApp  } from "react-icons/md";
 import { FaListAlt , FaEdit, FaRegHeart  } from "react-icons/fa";
 import { useState } from 'react';
+import StudentDashboard from '../StudentDashboard/StudentDashboard';
 
 
 
@@ -61,7 +62,7 @@ function Pstudent() {
                     </p>
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-12">
-                        {menuStudent === 'dashboard' && (<h1>this is Dashboard</h1>)}
+                        {menuStudent === 'dashboard' && (<StudentDashboard/>)}
                         {menuStudent === 'list_course' && (<h1>this is list_course</h1>)}
                         {menuStudent === 'edit_profile' && (<h1>this is edit_profile</h1>)}
                         {menuStudent === 'favorite' && (<h1>this is favorite</h1>)}

@@ -1,0 +1,50 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.studentDashboard{
+    display: block;
+    width: 100%;
+    @include bgBlack
+}
+.studentDashboard_info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+    .studentDashboard_info_img{
+        width: 120px;
+        border-radius: 50%;
+    }
+    .studentDashboard_info_name{
+        font-family: iranBold;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $yellowColor2;
+        margin-right: 0.5rem;
+    }
+    .studentDashboard_info_text{
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+        color: $whiteColor;
+    }
+}
+
+.studentDashboard_item{
+    display: block;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $bgColor;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.studentDashboard_item_text{
+    display: block;
+    font-family: iranBlack;
+    font-size: 1.5rem;
+    color: $yellowColor2;
+}
+.studentDashboard_item_number{
+    display: block;
+    font-size: 1.5rem;
+    color: $whiteColor;
+}
