@@ -12,6 +12,9 @@ function StudentListCourse() {
         </div>
         <div className="row mt-4">
             <StudentCourse/>
+            <StudentCourse/>
+            <StudentCourse/>
+            <StudentCourse/>
         </div>
     </section> 
   )
