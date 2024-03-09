@@ -5,6 +5,7 @@ import { FaListAlt , FaEdit, FaRegHeart  } from "react-icons/fa";
 import { useState } from 'react';
 import StudentDashboard from '../StudentDashboard/StudentDashboard';
 import StudentListCourse from '../StudentListCourse/StudentListCourse';
+import StudentEdit from './StudentEdit/StudentEdit';
 
 
 
@@ -65,7 +66,7 @@ function Pstudent() {
                 <div className="col-lg-9 col-md-9 col-sm-12">
                         {menuStudent === 'dashboard' && (<StudentDashboard/>)}
                         {menuStudent === 'list_course' && (<StudentListCourse/>)}
-                        {menuStudent === 'edit_profile' && (<h1>this is edit_profile</h1>)}
+                        {menuStudent === 'edit_profile' && (<StudentEdit/>)}
                         {menuStudent === 'favorite' && (<h1>this is favorite</h1>)}
                 </div>
             </div>
