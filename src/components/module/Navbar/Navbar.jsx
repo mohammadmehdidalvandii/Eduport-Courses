@@ -11,20 +11,51 @@ import {faBars, faSearch, faShoppingCart, faTimes, faUser} from "@fortawesome/fr
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import coursesContext from '../../../Context/coursesContext';
+import userContext from '../../../Context/userContext';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+    const courseData =useContext(coursesContext)
+    const userData  = useContext(userContext)
     const [activeMenu , setActiveMenu] = useState('/')
     const [showMenu , setShowMenu] = useState(false)
     const [loginRegister , setLoginRegister] = useState(false)
     const [accountMenu ,setAccountMenu] = useState(false)
     const [basketCount ,setBasketCount] = useState(0)
     const [search , setSearch] = useState('')
+    const [client , setClient] = useState(true)
+    const [admin , setAdmin] = useState(false)
+    const [teacher , setTeacher] = useState(false)
+    const [student , setStudent] = useState(false)
 
-    const courseData =useContext(coursesContext)
 
     const navigate = useNavigate()
+    const handlerExitUser = ()=>{
+        
+    }
+
+    // start login show menu admin-teacher-student
+    useEffect(()=>{
+        if(userData.userInfo){
+            if(userData.userInfo.find(user=>user.role === 'admin') ){
+                setAdmin(true)
+                setClient(false)
+            } else if (userData.userInfo.find(user=>user.role === 'teacher') ){
+                setTeacher(true)
+                setClient(false)
+            } else if(userData.userInfo.find(user=>user.role === 'student') ){
+                setStudent(true)
+                setClient(false)
+            } else if(userData.userInfo.length === 0) {
+                navigate('/')
+            }
+        } else{
+            setClient(true)
+        }
+    },[userData.userInfo])
+        // End login show menu admin-teacher-student
+ 
 
     // start search logic
     const handlerSearchClick =()=>{
@@ -136,13 +167,87 @@ function Navbar() {
                             <FontAwesomeIcon icon={faSearch} onClick={handlerSearchClick}/>
                         </span>
                     </div>
+                        {client && (
+                                 <div className="navbar_loginRegister">
+                                 <span className="navbar_loginRegister_icon" onClick={handlerShowMenu}>
+                                 <FontAwesomeIcon icon={faUser}/>
+                                 </span>
+                                 {showMenu && (
+                                     
+                                     <>
+                                      <ul className="navbar_loginRegister_menu">
+                                     <li className="navbar_loginRegister_item">
+                                         <NavLink to='/Login' className='navbar_loginRegister_itemLink'>ورود</NavLink>
+                                     </li>
+                                     <li className="navbar_LoginRegister_item">
+                                         <NavLink to='/Register' className='navbar_loginRegister_itemLink'>ثبت نام</NavLink>
+                                     </li>
+                                 </ul>
+                                     </>
+                                 )}
+                             </div>
+                        )}
+
+                        {admin &&(
+                            <div className="navbar_account">
+                            <span className="navbar_account_icon" onClick={handlerShowAccountMenu}>
+                                <FontAwesomeIcon icon={faUser}/>
+                            </span>
+                            {accountMenu && (
+                            <ul className="navbar_account_items">
+                                <li className="navbar_account_item">
+                                    <NavLink to='/P_admin' className='navbar_account_itemLink'>حساب کاربری</NavLink>
+                                </li>
+                                <li className="navbar_account_item">
+                                    <button className="navbar_account_itemBtn" onClick={handlerExitUser} >خروج</button>
+                                </li>
+                            </ul>
+                            )}
+                          </div>
+                        )}
+                        {teacher &&(
+                            <div className="navbar_account">
+                            <span className="navbar_account_icon" onClick={handlerShowAccountMenu}>
+                                <FontAwesomeIcon icon={faUser}/>
+                            </span>
+                            {accountMenu && (
+                            <ul className="navbar_account_items">
+                                <li className="navbar_account_item">
+                                    <NavLink to='/P_teacher' className='navbar_account_itemLink'>حساب کاربری</NavLink>
+                                </li>
+                                <li className="navbar_account_item">
+                                    <button className="navbar_account_itemBtn" onClick={handlerExitUser} >خروج</button>
+                                </li>
+                            </ul>
+                            )}
+                          </div>
+                        )}
+                        {student &&(
+                            <div className="navbar_account">
+                            <span className="navbar_account_icon" onClick={handlerShowAccountMenu}>
+                                <FontAwesomeIcon icon={faUser}/>
+                            </span>
+                            {accountMenu && (
+                            <ul className="navbar_account_items">
+                                <li className="navbar_account_item">
+                                    <NavLink to='/P_student' className='navbar_account_itemLink'>حساب کاربری</NavLink>
+                                </li>
+                                <li className="navbar_account_item">
+                                    <button className="navbar_account_itemBtn" onClick={handlerExitUser} >خروج</button>
+                                </li>
+                            </ul>
+                            )}
+                          </div>
+                        )}
                     {/* menu login-register */}
-                    <div className="navbar_loginRegister">
+                    {/* <div className="navbar_loginRegister">
                         <span className="navbar_loginRegister_icon" onClick={handlerShowMenu}>
                         <FontAwesomeIcon icon={faUser}/>
                         </span>
                         {showMenu && (
-                        <ul className="navbar_loginRegister_menu">
+                            
+                            <>
+                             <ul className="navbar_loginRegister_menu">
                             <li className="navbar_loginRegister_item">
                                 <NavLink to='/Login' className='navbar_loginRegister_itemLink'>ورود</NavLink>
                             </li>
@@ -150,8 +255,9 @@ function Navbar() {
                                 <NavLink to='/Register' className='navbar_loginRegister_itemLink'>ثبت نام</NavLink>
                             </li>
                         </ul>
+                            </>
                         )}
-                    </div>
+                    </div> */}
                       {/* menu login-register */}
                       {/* menu account */}
                       {/* <div className="navbar_account">

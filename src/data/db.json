@@ -442,5 +442,26 @@
             "month":"اسفند",
             "time":3867
         }
+    ],
+
+    "users":[
+        {
+            "id":1,
+            "email":"admin@gmail.com",
+            "password":"admin1212",
+            "role":"admin"
+        },
+        {
+            "id":2,
+            "email":"teacher@gmail.com",
+            "password":"teacher1212",
+            "role":"teacher"
+        },
+        {
+            "id":3,
+            "email":"student@gmail.com",
+            "password":"student1212",
+            "role":"student"
+        }
     ]
 }

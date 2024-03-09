@@ -8,8 +8,46 @@ config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faMailBulk, faMailForward } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from 'react-router-dom';
+import userContext from '../../../Context/userContext'
+import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 
 function LoginForm() {
+    const usersData = useContext(userContext)
+    const navigate = useNavigate()
+
+    const [email , setEmail] = useState('')
+    const [password , setPassword] = useState('')
+
+    const handlerFormButton = (e)=>{
+        e.preventDefault()
+
+  
+        const isAccessUser = usersData.users.find(user=> user.email.includes(email) && user.password.includes(password))
+        if(isAccessUser){
+        let accessUser = {
+            id:isAccessUser.id,
+            email,
+            password,
+            role: isAccessUser.role
+        }
+        usersData.setUserInfo((prevUser)=> [...prevUser , accessUser])
+            swal({
+                icon:"success",
+                text:"ورود شما موفق  بود",
+                buttons:"باشه"
+            })
+            navigate('/')
+        }else{
+            swal({
+                icon:"error",
+                text:"چنین کاربری وجود ندار",
+                buttons:"باشه"
+            })
+        }
+    }
+
   return (
    <section className="loginForm">
     <div className="container">
@@ -30,7 +68,7 @@ function LoginForm() {
                             <span className="formBox_icon">
                                 <FontAwesomeIcon icon={faMailBulk}/>
                             </span>
-                            <input type="text"  className='formBox_input' placeholder='****@gmail.com'/>
+                            <input type="text" value={email}  className='formBox_input' placeholder='****@gmail.com' onChange={e=>setEmail(e.target.value)} />
                         </div>
                     </div>
                     <div className="formBox">
@@ -39,7 +77,7 @@ function LoginForm() {
                             <span className="formBox_icon">
                                 <FontAwesomeIcon icon={faLock}/>
                             </span>
-                            <input type="text"  className='formBox_input' placeholder='********'/>
+                            <input type="text"  value={password} className='formBox_input' placeholder='********' onChange={e=>setPassword(e.target.value)}/>
                         </div>
                     </div>
                     <div className="form_save_forget">
@@ -49,7 +87,7 @@ function LoginForm() {
                         </div>
                         <NavLink to='/' className='formForget'>رمز خود را فراموش کرده اید؟</NavLink>
                     </div>
-                    <button className="form_btn">ورود</button>
+                    <button className="form_btn" onClick={handlerFormButton}>ورود</button>
                     <NavLink to='' className='form_linkRegister'>حساب کاربری ندارید؟من بزن</NavLink>
                 </form>
             </div>
