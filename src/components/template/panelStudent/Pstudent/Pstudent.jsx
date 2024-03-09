@@ -5,7 +5,7 @@ import { FaListAlt , FaEdit, FaRegHeart  } from "react-icons/fa";
 import { useState } from 'react';
 import StudentDashboard from '../StudentDashboard/StudentDashboard';
 import StudentListCourse from '../StudentListCourse/StudentListCourse';
-import StudentEdit from './StudentEdit/StudentEdit';
+import StudentEdit from '../StudentEdit/StudentEdit';
 
 
 
