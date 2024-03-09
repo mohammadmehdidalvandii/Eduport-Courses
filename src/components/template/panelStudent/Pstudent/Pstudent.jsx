@@ -6,6 +6,7 @@ import { useState } from 'react';
 import StudentDashboard from '../StudentDashboard/StudentDashboard';
 import StudentListCourse from '../StudentListCourse/StudentListCourse';
 import StudentEdit from '../StudentEdit/StudentEdit';
+import StudentFavorite from '../StudentFavorite/StudentFavorite';
 
 
 
@@ -67,7 +68,7 @@ function Pstudent() {
                         {menuStudent === 'dashboard' && (<StudentDashboard/>)}
                         {menuStudent === 'list_course' && (<StudentListCourse/>)}
                         {menuStudent === 'edit_profile' && (<StudentEdit/>)}
-                        {menuStudent === 'favorite' && (<h1>this is favorite</h1>)}
+                        {menuStudent === 'favorite' && (<StudentFavorite/>)}
                 </div>
             </div>
         </div>

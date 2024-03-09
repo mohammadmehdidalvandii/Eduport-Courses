@@ -1,0 +1,13 @@
+@import '../../../../sass/_variable.scss';
+@import '../../../../sass/_mixin.scss';
+.studentFavorite{
+    display: block;
+    width: 100%;
+    @include bgBlack;
+}
+.studentFavorite_title{
+    @include titlePanel;
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $textColor;
+}
