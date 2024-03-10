@@ -14,6 +14,7 @@ import coursesContext from '../../../Context/coursesContext';
 import userContext from '../../../Context/userContext';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 
 function Navbar() {
     const courseData =useContext(coursesContext)
@@ -32,7 +33,16 @@ function Navbar() {
 
     const navigate = useNavigate()
     const handlerExitUser = ()=>{
-        
+        userData.setUserInfo(null)
+        navigate('/')
+        setAdmin(false)
+        setTeacher(false)
+        setStudent(false)
+        swal({
+            icon:"success",
+            title:"شما خارج شدید ",
+            buttons:"باشه"
+        })
     }
 
     // start login show menu admin-teacher-student

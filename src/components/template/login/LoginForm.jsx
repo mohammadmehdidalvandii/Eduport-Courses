@@ -35,14 +35,14 @@ function LoginForm() {
         usersData.setUserInfo((prevUser)=> [...prevUser , accessUser])
             swal({
                 icon:"success",
-                text:"ورود شما موفق  بود",
+                title:"ورود شما موفق  بود",
                 buttons:"باشه"
             })
             navigate('/')
         }else{
             swal({
                 icon:"error",
-                text:"چنین کاربری وجود ندار",
+                title:"چنین کاربری وجود ندار",
                 buttons:"باشه"
             })
         }
