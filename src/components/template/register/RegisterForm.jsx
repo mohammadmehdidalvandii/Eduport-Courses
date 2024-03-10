@@ -46,7 +46,7 @@ function RegisterForm() {
                             <span className="formBox_icon">
                                 <FontAwesomeIcon icon={faLock}/>
                             </span>
-                            <input type="text"  className='formBox_input' placeholder='********'/>
+                            <input type="password"  className='formBox_input' placeholder='********'/>
                         </div>
                     </div>
                     <div className="formBox">
@@ -55,7 +55,7 @@ function RegisterForm() {
                             <span className="formBox_icon">
                                 <FontAwesomeIcon icon={faLock}/>
                             </span>
-                            <input type="text"  className='formBox_input' placeholder='********'/>
+                            <input type="password"  className='formBox_input' placeholder='********'/>
                         </div>
                     </div>
                         <div className="registerForm_rule">

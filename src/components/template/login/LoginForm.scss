@@ -1,4 +1,5 @@
 @import '../../../sass/_variable.scss';
+@import '../../../sass/_mixin.scss';
 
 .loginForm{
     display: block;
@@ -87,19 +88,7 @@
     }
 }
 .form_btn{
-    display: block;
-    width: 100%;
-    height: 2.5rem;
-    background-color: $blueColor2;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: $whiteColor;
-    outline: none;
-    border: none;
-    &:hover{
-        background-color: $blueColor3;
-    }
+  @include buttonBlue
 }
 .form_linkRegister{
     display: block;

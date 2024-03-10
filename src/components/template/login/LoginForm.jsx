@@ -77,7 +77,7 @@ function LoginForm() {
                             <span className="formBox_icon">
                                 <FontAwesomeIcon icon={faLock}/>
                             </span>
-                            <input type="text"  value={password} className='formBox_input' placeholder='********' onChange={e=>setPassword(e.target.value)}/>
+                            <input type="password"  value={password} className='formBox_input' placeholder='********' onChange={e=>setPassword(e.target.value)}/>
                         </div>
                     </div>
                     <div className="form_save_forget">
